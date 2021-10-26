@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+
+	<session-factory>
+
+		<!-- JDBC Properties TO Use JDBC In Hibernate -->
+		<property name="hibernate.connection.username"> postgres </property>
+		<property name="hibernate.connection.password"> password </property>
+		<property name="hibernate.connection.url">
+jdbc:postgresql://javafs-210927-sz.ctjhaliedh90.us-east-2.rds.amazonaws.com:5432/javafs210927		</property>
+		<property name="hibernate.connection.driver_class"> org.postgresql.Driver</property>
+
+
+		<!-- Hibernate Properties -->
+		<property name="hibernate.dialect"> org.hibernate.dialect.PostgreSQLDialect </property>
+		<property name="hibernate.default_schema"> hibernate </property>
+
+		<!-- Optional Properties -->
+		<property name="hibernate.show_sql"> true </property>
+		<!-- // VV Good For Development Not Production -->
+		<property name="hibernate.format_sql"> true </property>
+		<!-- DOL Permission Level -->
+		<property name="hibernate.hbm2ddl.auto"> create </property>
+
+
+		<!-- Mapping Entity Classes (So The SF IS Aware Of Them) -->
+
+		<mapping class="com.revature.models.Shelf" />
+		<mapping class="com.revature.models.Book" />
+
+
+	</session-factory>
+
+</hibernate-configuration>
