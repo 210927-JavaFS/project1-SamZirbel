@@ -14,6 +14,8 @@ public class EmployeeController implements Controller {
 	
 	public Handler getAllEmployees = (ctx) -> {
 		
+		ctx.req.getSession();
+		
 		if (ctx.req.getSession(false) != null) {
 			
 			List<Employee> employeelist = employeeservice.getAllEmployees();
@@ -31,6 +33,11 @@ public class EmployeeController implements Controller {
 	};
 	
 	public Handler getEmployeeByCerealID = (ctx) -> {
+		
+
+
+		ctx.req.getSession();
+		
 		
 		if (ctx.req.getSession(false) != null) {
 			
@@ -68,6 +75,10 @@ public class EmployeeController implements Controller {
 	// VV Post Is For Additions
 	public Handler postEmployee = (ctx) -> {
 		
+
+		ctx.req.getSession();
+		
+		
 		if (ctx.req.getSession(false) != null) {
 			
 			Employee employee = ctx.bodyAsClass(Employee.class);
@@ -95,6 +106,11 @@ public class EmployeeController implements Controller {
 	// VV Put Is For Updates
 	public Handler putEmployee = (ctx) -> {
 		
+
+
+		ctx.req.getSession();
+		
+		
 		if (ctx.req.getSession(false) != null) {
 			
 			Employee employee = ctx.bodyAsClass(Employee.class);
@@ -120,6 +136,11 @@ public class EmployeeController implements Controller {
 	};
 	
 	public Handler deleteEmployee = (ctx) -> {
+		
+
+
+		ctx.req.getSession();
+		
 		
 		if (ctx.req.getSession(false) != null) {
 			
