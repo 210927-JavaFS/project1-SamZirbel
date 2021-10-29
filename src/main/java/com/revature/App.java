@@ -14,13 +14,13 @@ public class App {
 		
 		app = Javalin.create((config) -> {
 			
-			config.addStaticFiles("/Static", Location.CLASSPATH);
+			config.addStaticFiles("/static", Location.CLASSPATH);
 			
 		});
 				
 		configure(new EmployeeController());
 		
-		app.start(5432);
+		app.start(8081);
 		
 	}
 	
