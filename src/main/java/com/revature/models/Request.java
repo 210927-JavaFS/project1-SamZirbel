@@ -1,23 +1,41 @@
 package com.revature.models;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+
+import org.hibernate.annotations.Cascade;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 public class Request {
 	
 	@Id
-	@Column(unique = true)
+	// VV removed unique True
+	//@Column(unique = true, nullable = true)
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	// VV Added To Try
+	//@MapKey()
+	//@ManyToOne(mappedBy = "Account")
+	
+	//@ManyToOne(fetch=FetchType.LAZY, cascade=CascadeType.ALL)
+	//@JoinColumn(name = "accountId")
+	//@JsonIgnore
 	private int requestId;
 	
+	// VV Pending Approved Declined
 	private String status;
 	
 	private int amount;
 	
+	// VV Lodging Travel Food Other
 	private String type;
 	
 	private String submitted;

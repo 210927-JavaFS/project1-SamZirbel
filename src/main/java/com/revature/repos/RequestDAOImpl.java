@@ -1,57 +1,36 @@
 package com.revature.repos;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Vector;
 
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-import com.revature.models.Login;
+import com.revature.models.Request;
 import com.revature.utils.HibernateUtil;
 
-public class LoginDAOImpl implements LoginDAO {
+public class RequestDAOImpl implements RequestDAO{
 
 	@Override
-	public List<Login> getAllLogin() {
-
-		try {
-			
-			Session session = HibernateUtil.getSession();
-			
-			Transaction transaction = session.beginTransaction();
-			
-			List<Login> result = session.createQuery("FROM Login").list();
-			
-			transaction.commit();
-			
-			HibernateUtil.closeSession();
-			
-			return result;
+	public List<Request> getAllRequests() {
 		
-		}
-		catch (HibernateException e) {
-			
-			e.printStackTrace();
-			
-		}
-		
-		return null;
-	
-	}
-
-	@Override
-	public Login getLoginByUsername(String username) {
-
 		Session session = HibernateUtil.getSession();
 		
-		return session.get(Login.class, username);
+		return session.createQuery("FROM Request").list();
 		
 	}
 
 	@Override
-	public boolean postLogin(Login login) {
+	public Request getRequestById(int requestId) {
+		
+		Session session = HibernateUtil.getSession();
+		
+		return session.get(Request.class, requestId);
+		
+	}
+
+	@Override
+	public boolean postRequest(Request request) {
 
 		try {
 			
@@ -59,7 +38,9 @@ public class LoginDAOImpl implements LoginDAO {
 			
 			Transaction transaction = session.beginTransaction();
 			
-			session.save(login);
+			System.err.println(request);
+			
+			session.save(request);
 			
 			transaction.commit();
 			
@@ -74,38 +55,11 @@ public class LoginDAOImpl implements LoginDAO {
 		
 		return false;
 	
-	
-	}
-
-	@Override
-	public boolean putLogin(Login login) {
-
-		try {
-			
-			Session session = HibernateUtil.getSession();
-			
-			Transaction transaction = session.beginTransaction();
-			
-			session.merge(login);
-			
-			transaction.commit();
-			
-			HibernateUtil.closeSession();
-			
-			return true;
-			
-		}
-		catch (HibernateException e) {
-			
-			e.printStackTrace();
-			
-		}
 		
-		return false;
 	}
 
 	@Override
-	public boolean deleteLogin(Login login) {
+	public boolean putRequest(Request request) {
 
 		try {
 			
@@ -113,7 +67,7 @@ public class LoginDAOImpl implements LoginDAO {
 			
 			Transaction transaction = session.beginTransaction();
 			
-			session.delete(login);
+			session.merge(request);
 			
 			transaction.commit();
 			
@@ -129,8 +83,35 @@ public class LoginDAOImpl implements LoginDAO {
 		}
 		
 		return false;
+		
 	}
-	
-	
+
+	@Override
+	public boolean deleteRequest(Request request) {
+
+		try {
+			
+			Session session = HibernateUtil.getSession();
+			
+			Transaction transaction = session.beginTransaction();
+			
+			session.delete(request);
+			
+			transaction.commit();
+			
+			HibernateUtil.closeSession();
+			
+			return true;
+			
+		}
+		catch (HibernateException e) {
+			
+			e.printStackTrace();
+			
+		}
+		
+		return false;
+		
+	}
 
 }

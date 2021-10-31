@@ -1,5 +1,6 @@
 package com.revature.models;
 
+import java.util.Arrays;
 import java.util.List;
 
 import javax.persistence.CascadeType;
@@ -10,7 +11,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 
-@Entity
+//@Entity
 public class Login {
 	
 	@Id
@@ -29,13 +30,46 @@ public class Login {
 		super();
 		this.username = username;
 		this.password = password;
-		this.accounts = accounts;
+		
+		//if (accounts != null) { this.accounts = accounts; }
+		//else { 
+			/*
+			List<Account> emptyList = null; 
+			Account account = null;
+			emptyList.add(account);
+			accounts = emptyList;
+			*/
+			
+			List<Account> list = Arrays.asList(new Account("Filler", "Filler", "Filler", null));
+			accounts = list;
+		
+		//}
+		
 	}
-	
 	
 
 	public Login() {
 		super();
+	}
+
+	public Login(String password, List<Account> accounts) {
+		super();
+		this.password = password;
+		
+		//if (accounts != null) { this.accounts = accounts; }
+		//else { 
+			/*
+			List<Account> emptyList = null; 
+			Account account = null;
+			emptyList.add(account);
+			accounts = emptyList;
+			*/
+			
+			List<Account> list = Arrays.asList(new Account("Filler", "Filler", "Filler", null));
+			accounts = list;
+		
+		//}
+		
 	}
 
 

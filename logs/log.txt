@@ -1,0 +1,655 @@
+18:15:39.098 [] [main] DEBUG org.eclipse.jetty.util.log - Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+18:15:39.132 [] [main] INFO  org.eclipse.jetty.util.log - Logging initialized @915ms to org.eclipse.jetty.util.log.Slf4jLog
+18:15:39.231 [] [main] INFO  io.javalin.Javalin - Static file handler added:
+    {urlPathPrefix: "/", path: "/static", location: Location.CLASSPATH}
+    Resolved path: 'file:///C:/Users/Sam/Desktop/Project1V2/project1-SamZirbel/target/classes/static/'
+18:15:39.334 [] [main] INFO  io.javalin.Javalin - 
+           __                      __ _
+          / /____ _ _   __ ____ _ / /(_)____
+     __  / // __ `/| | / // __ `// // // __ \
+    / /_/ // /_/ / | |/ // /_/ // // // / / /
+    \____/ \__,_/  |___/ \__,_//_//_//_/ /_/
+
+        https://javalin.io/documentation
+
+18:15:39.337 [] [main] INFO  io.javalin.Javalin - Starting Javalin ...
+18:15:39.638 [] [main] INFO  io.javalin.Javalin - Listening on http://localhost:8081/
+18:15:39.638 [] [main] INFO  io.javalin.Javalin - Javalin started in 304ms \o/
+18:15:47.980 [] [qtp1204296383-22] DEBUG org.eclipse.jetty.io.IdleTimeout - SocketChannelEndPoint@23baaf4f{l=/[0:0:0:0:0:0:0:1]:8081,r=/[0:0:0:0:0:0:0:1]:49896,OPEN,fill=-,flush=-,to=3/30000}{io=0/0,kio=0,kro=0}-><null> idle timeout check, elapsed: 2 ms, remaining: 29998 ms
+18:15:47.980 [] [qtp1204296383-25] DEBUG org.eclipse.jetty.io.IdleTimeout - SocketChannelEndPoint@65f62619{l=/[0:0:0:0:0:0:0:1]:8081,r=/[0:0:0:0:0:0:0:1]:49897,OPEN,fill=-,flush=-,to=3/30000}{io=0/0,kio=0,kro=0}-><null> idle timeout check, elapsed: 2 ms, remaining: 29998 ms
+18:15:48.013 [] [qtp1204296383-25] DEBUG o.e.jetty.server.HttpConnection - New HTTP Connection HttpConnection@60960685::SocketChannelEndPoint@65f62619{l=/[0:0:0:0:0:0:0:1]:8081,r=/[0:0:0:0:0:0:0:1]:49897,OPEN,fill=-,flush=-,to=37/30000}{io=0/0,kio=0,kro=0}-><null>
+18:15:48.013 [] [qtp1204296383-22] DEBUG o.e.jetty.server.HttpConnection - New HTTP Connection HttpConnection@3d078a0e::SocketChannelEndPoint@23baaf4f{l=/[0:0:0:0:0:0:0:1]:8081,r=/[0:0:0:0:0:0:0:1]:49896,OPEN,fill=-,flush=-,to=37/30000}{io=0/0,kio=0,kro=0}-><null>
+18:15:48.016 [] [qtp1204296383-25] DEBUG o.eclipse.jetty.io.AbstractEndPoint - onOpen SocketChannelEndPoint@65f62619{l=/[0:0:0:0:0:0:0:1]:8081,r=/[0:0:0:0:0:0:0:1]:49897,OPEN,fill=-,flush=-,to=38/30000}{io=0/0,kio=0,kro=0}->HttpConnection@60960685[p=HttpParser{s=START,0 of -1},g=HttpGenerator@62ffff9e{s=START}]=>HttpChannelOverHttp@328d6f6a{s=HttpChannelState@7323d797{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=0,c=false/false,a=IDLE,uri=null,age=0}
+18:15:48.016 [] [qtp1204296383-22] DEBUG o.eclipse.jetty.io.AbstractEndPoint - onOpen SocketChannelEndPoint@23baaf4f{l=/[0:0:0:0:0:0:0:1]:8081,r=/[0:0:0:0:0:0:0:1]:49896,OPEN,fill=-,flush=-,to=38/30000}{io=0/0,kio=0,kro=0}->HttpConnection@3d078a0e[p=HttpParser{s=START,0 of -1},g=HttpGenerator@6d5dac10{s=START}]=>HttpChannelOverHttp@6c0b0c4f{s=HttpChannelState@359800fd{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=0,c=false/false,a=IDLE,uri=null,age=0}
+18:15:48.018 [] [qtp1204296383-25] DEBUG o.e.jetty.io.AbstractConnection - onOpen HttpConnection@60960685::SocketChannelEndPoint@65f62619{l=/[0:0:0:0:0:0:0:1]:8081,r=/[0:0:0:0:0:0:0:1]:49897,OPEN,fill=-,flush=-,to=40/30000}{io=0/0,kio=0,kro=0}->HttpConnection@60960685[p=HttpParser{s=START,0 of -1},g=HttpGenerator@62ffff9e{s=START}]=>HttpChannelOverHttp@328d6f6a{s=HttpChannelState@7323d797{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=0,c=false/false,a=IDLE,uri=null,age=0}
+18:15:48.018 [] [qtp1204296383-22] DEBUG o.e.jetty.io.AbstractConnection - onOpen HttpConnection@3d078a0e::SocketChannelEndPoint@23baaf4f{l=/[0:0:0:0:0:0:0:1]:8081,r=/[0:0:0:0:0:0:0:1]:49896,OPEN,fill=-,flush=-,to=40/30000}{io=0/0,kio=0,kro=0}->HttpConnection@3d078a0e[p=HttpParser{s=START,0 of -1},g=HttpGenerator@6d5dac10{s=START}]=>HttpChannelOverHttp@6c0b0c4f{s=HttpChannelState@359800fd{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=0,c=false/false,a=IDLE,uri=null,age=0}
+18:15:48.018 [] [qtp1204296383-25] DEBUG o.e.jetty.io.AbstractConnection - fillInterested HttpConnection@60960685::SocketChannelEndPoint@65f62619{l=/[0:0:0:0:0:0:0:1]:8081,r=/[0:0:0:0:0:0:0:1]:49897,OPEN,fill=-,flush=-,to=41/30000}{io=0/0,kio=0,kro=0}->HttpConnection@60960685[p=HttpParser{s=START,0 of -1},g=HttpGenerator@62ffff9e{s=START}]=>HttpChannelOverHttp@328d6f6a{s=HttpChannelState@7323d797{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=0,c=false/false,a=IDLE,uri=null,age=0}
+18:15:48.018 [] [qtp1204296383-22] DEBUG o.e.jetty.io.AbstractConnection - fillInterested HttpConnection@3d078a0e::SocketChannelEndPoint@23baaf4f{l=/[0:0:0:0:0:0:0:1]:8081,r=/[0:0:0:0:0:0:0:1]:49896,OPEN,fill=-,flush=-,to=41/30000}{io=0/0,kio=0,kro=0}->HttpConnection@3d078a0e[p=HttpParser{s=START,0 of -1},g=HttpGenerator@6d5dac10{s=START}]=>HttpChannelOverHttp@6c0b0c4f{s=HttpChannelState@359800fd{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=0,c=false/false,a=IDLE,uri=null,age=0}
+18:15:48.019 [] [qtp1204296383-25] DEBUG org.eclipse.jetty.io.FillInterest - interested FillInterest@79c0e40f{AC.ReadCB@60960685{HttpConnection@60960685::SocketChannelEndPoint@65f62619{l=/[0:0:0:0:0:0:0:1]:8081,r=/[0:0:0:0:0:0:0:1]:49897,OPEN,fill=FI,flush=-,to=0/30000}{io=0/0,kio=0,kro=0}->HttpConnection@60960685[p=HttpParser{s=START,0 of -1},g=HttpGenerator@62ffff9e{s=START}]=>HttpChannelOverHttp@328d6f6a{s=HttpChannelState@7323d797{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=0,c=false/false,a=IDLE,uri=null,age=0}}}
+18:15:48.019 [] [qtp1204296383-22] DEBUG org.eclipse.jetty.io.FillInterest - interested FillInterest@33b57766{AC.ReadCB@3d078a0e{HttpConnection@3d078a0e::SocketChannelEndPoint@23baaf4f{l=/[0:0:0:0:0:0:0:1]:8081,r=/[0:0:0:0:0:0:0:1]:49896,OPEN,fill=FI,flush=-,to=0/30000}{io=0/0,kio=0,kro=0}->HttpConnection@3d078a0e[p=HttpParser{s=START,0 of -1},g=HttpGenerator@6d5dac10{s=START}]=>HttpChannelOverHttp@6c0b0c4f{s=HttpChannelState@359800fd{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=0,c=false/false,a=IDLE,uri=null,age=0}}}
+18:15:48.020 [] [qtp1204296383-22] DEBUG org.eclipse.jetty.io.ChannelEndPoint - changeInterests p=false 0->1 for SocketChannelEndPoint@23baaf4f{l=/[0:0:0:0:0:0:0:1]:8081,r=/[0:0:0:0:0:0:0:1]:49896,OPEN,fill=FI,flush=-,to=1/30000}{io=0/1,kio=0,kro=0}->HttpConnection@3d078a0e[p=HttpParser{s=START,0 of -1},g=HttpGenerator@6d5dac10{s=START}]=>HttpChannelOverHttp@6c0b0c4f{s=HttpChannelState@359800fd{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=0,c=false/false,a=IDLE,uri=null,age=0}
+18:15:48.020 [] [qtp1204296383-25] DEBUG org.eclipse.jetty.io.ChannelEndPoint - changeInterests p=false 0->1 for SocketChannelEndPoint@65f62619{l=/[0:0:0:0:0:0:0:1]:8081,r=/[0:0:0:0:0:0:0:1]:49897,OPEN,fill=FI,flush=-,to=1/30000}{io=0/1,kio=0,kro=0}->HttpConnection@60960685[p=HttpParser{s=START,0 of -1},g=HttpGenerator@62ffff9e{s=START}]=>HttpChannelOverHttp@328d6f6a{s=HttpChannelState@7323d797{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=0,c=false/false,a=IDLE,uri=null,age=0}
+18:15:48.022 [] [qtp1204296383-23] DEBUG org.eclipse.jetty.io.ChannelEndPoint - Key interests updated 0 -> 1 on SocketChannelEndPoint@23baaf4f{l=/[0:0:0:0:0:0:0:1]:8081,r=/[0:0:0:0:0:0:0:1]:49896,OPEN,fill=FI,flush=-,to=2/30000}{io=1/1,kio=1,kro=0}->HttpConnection@3d078a0e[p=HttpParser{s=START,0 of -1},g=HttpGenerator@6d5dac10{s=START}]=>HttpChannelOverHttp@6c0b0c4f{s=HttpChannelState@359800fd{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=0,c=false/false,a=IDLE,uri=null,age=0}
+18:15:48.022 [] [qtp1204296383-21] DEBUG org.eclipse.jetty.io.ChannelEndPoint - Key interests updated 0 -> 1 on SocketChannelEndPoint@65f62619{l=/[0:0:0:0:0:0:0:1]:8081,r=/[0:0:0:0:0:0:0:1]:49897,OPEN,fill=FI,flush=-,to=3/30000}{io=1/1,kio=1,kro=0}->HttpConnection@60960685[p=HttpParser{s=START,0 of -1},g=HttpGenerator@62ffff9e{s=START}]=>HttpChannelOverHttp@328d6f6a{s=HttpChannelState@7323d797{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=0,c=false/false,a=IDLE,uri=null,age=0}
+18:15:48.024 [] [qtp1204296383-23] DEBUG org.eclipse.jetty.io.ChannelEndPoint - onSelected 1->0 r=true w=false for SocketChannelEndPoint@23baaf4f{l=/[0:0:0:0:0:0:0:1]:8081,r=/[0:0:0:0:0:0:0:1]:49896,OPEN,fill=FI,flush=-,to=4/30000}{io=1/0,kio=1,kro=1}->HttpConnection@3d078a0e[p=HttpParser{s=START,0 of -1},g=HttpGenerator@6d5dac10{s=START}]=>HttpChannelOverHttp@6c0b0c4f{s=HttpChannelState@359800fd{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=0,c=false/false,a=IDLE,uri=null,age=0}
+18:15:48.024 [] [qtp1204296383-21] DEBUG org.eclipse.jetty.io.ChannelEndPoint - onSelected 1->0 r=true w=false for SocketChannelEndPoint@65f62619{l=/[0:0:0:0:0:0:0:1]:8081,r=/[0:0:0:0:0:0:0:1]:49897,OPEN,fill=FI,flush=-,to=4/30000}{io=1/0,kio=1,kro=1}->HttpConnection@60960685[p=HttpParser{s=START,0 of -1},g=HttpGenerator@62ffff9e{s=START}]=>HttpChannelOverHttp@328d6f6a{s=HttpChannelState@7323d797{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=0,c=false/false,a=IDLE,uri=null,age=0}
+18:15:48.025 [] [qtp1204296383-23] DEBUG org.eclipse.jetty.io.ChannelEndPoint - task CEP:SocketChannelEndPoint@23baaf4f{l=/[0:0:0:0:0:0:0:1]:8081,r=/[0:0:0:0:0:0:0:1]:49896,OPEN,fill=FI,flush=-,to=6/30000}{io=1/0,kio=1,kro=1}->HttpConnection@3d078a0e[p=HttpParser{s=START,0 of -1},g=HttpGenerator@6d5dac10{s=START}]=>HttpChannelOverHttp@6c0b0c4f{s=HttpChannelState@359800fd{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=0,c=false/false,a=IDLE,uri=null,age=0}:runFillable:BLOCKING
+18:15:48.025 [] [qtp1204296383-21] DEBUG org.eclipse.jetty.io.ChannelEndPoint - task CEP:SocketChannelEndPoint@65f62619{l=/[0:0:0:0:0:0:0:1]:8081,r=/[0:0:0:0:0:0:0:1]:49897,OPEN,fill=FI,flush=-,to=6/30000}{io=1/0,kio=1,kro=1}->HttpConnection@60960685[p=HttpParser{s=START,0 of -1},g=HttpGenerator@62ffff9e{s=START}]=>HttpChannelOverHttp@328d6f6a{s=HttpChannelState@7323d797{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=0,c=false/false,a=IDLE,uri=null,age=0}:runFillable:BLOCKING
+18:15:48.028 [] [qtp1204296383-23] DEBUG org.eclipse.jetty.io.ChannelEndPoint - Key interests updated 1 -> 0 on SocketChannelEndPoint@23baaf4f{l=/[0:0:0:0:0:0:0:1]:8081,r=/[0:0:0:0:0:0:0:1]:49896,OPEN,fill=FI,flush=-,to=8/30000}{io=0/0,kio=0,kro=1}->HttpConnection@3d078a0e[p=HttpParser{s=START,0 of -1},g=HttpGenerator@6d5dac10{s=START}]=>HttpChannelOverHttp@6c0b0c4f{s=HttpChannelState@359800fd{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=0,c=false/false,a=IDLE,uri=null,age=0}
+18:15:48.028 [] [qtp1204296383-22] DEBUG org.eclipse.jetty.io.FillInterest - fillable FillInterest@79c0e40f{AC.ReadCB@60960685{HttpConnection@60960685::SocketChannelEndPoint@65f62619{l=/[0:0:0:0:0:0:0:1]:8081,r=/[0:0:0:0:0:0:0:1]:49897,OPEN,fill=FI,flush=-,to=9/30000}{io=0/0,kio=0,kro=1}->HttpConnection@60960685[p=HttpParser{s=START,0 of -1},g=HttpGenerator@62ffff9e{s=START}]=>HttpChannelOverHttp@328d6f6a{s=HttpChannelState@7323d797{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=0,c=false/false,a=IDLE,uri=null,age=0}}}
+18:15:48.028 [] [qtp1204296383-21] DEBUG org.eclipse.jetty.io.ChannelEndPoint - Key interests updated 1 -> 0 on SocketChannelEndPoint@65f62619{l=/[0:0:0:0:0:0:0:1]:8081,r=/[0:0:0:0:0:0:0:1]:49897,OPEN,fill=FI,flush=-,to=8/30000}{io=0/0,kio=0,kro=1}->HttpConnection@60960685[p=HttpParser{s=START,0 of -1},g=HttpGenerator@62ffff9e{s=START}]=>HttpChannelOverHttp@328d6f6a{s=HttpChannelState@7323d797{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=0,c=false/false,a=IDLE,uri=null,age=0}
+18:15:48.029 [] [qtp1204296383-30] DEBUG org.eclipse.jetty.io.FillInterest - fillable FillInterest@33b57766{AC.ReadCB@3d078a0e{HttpConnection@3d078a0e::SocketChannelEndPoint@23baaf4f{l=/[0:0:0:0:0:0:0:1]:8081,r=/[0:0:0:0:0:0:0:1]:49896,OPEN,fill=FI,flush=-,to=8/30000}{io=0/0,kio=0,kro=1}->HttpConnection@3d078a0e[p=HttpParser{s=START,0 of -1},g=HttpGenerator@6d5dac10{s=START}]=>HttpChannelOverHttp@6c0b0c4f{s=HttpChannelState@359800fd{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=0,c=false/false,a=IDLE,uri=null,age=0}}}
+18:15:48.030 [] [qtp1204296383-22] DEBUG o.e.jetty.server.HttpConnection - HttpConnection@60960685::SocketChannelEndPoint@65f62619{l=/[0:0:0:0:0:0:0:1]:8081,r=/[0:0:0:0:0:0:0:1]:49897,OPEN,fill=-,flush=-,to=10/30000}{io=0/0,kio=0,kro=1}->HttpConnection@60960685[p=HttpParser{s=START,0 of -1},g=HttpGenerator@62ffff9e{s=START}]=>HttpChannelOverHttp@328d6f6a{s=HttpChannelState@7323d797{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=0,c=false/false,a=IDLE,uri=null,age=0} onFillable enter HttpChannelState@7323d797{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0} null
+18:15:48.030 [] [qtp1204296383-30] DEBUG o.e.jetty.server.HttpConnection - HttpConnection@3d078a0e::SocketChannelEndPoint@23baaf4f{l=/[0:0:0:0:0:0:0:1]:8081,r=/[0:0:0:0:0:0:0:1]:49896,OPEN,fill=-,flush=-,to=11/30000}{io=0/0,kio=0,kro=1}->HttpConnection@3d078a0e[p=HttpParser{s=START,0 of -1},g=HttpGenerator@6d5dac10{s=START}]=>HttpChannelOverHttp@6c0b0c4f{s=HttpChannelState@359800fd{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=0,c=false/false,a=IDLE,uri=null,age=0} onFillable enter HttpChannelState@359800fd{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0} null
+18:15:48.034 [] [qtp1204296383-30] DEBUG o.eclipse.jetty.io.AbstractEndPoint - shutdownInput SocketChannelEndPoint@23baaf4f{l=/[0:0:0:0:0:0:0:1]:8081,r=/[0:0:0:0:0:0:0:1]:49896,OPEN,fill=-,flush=-,to=13/30000}{io=0/0,kio=0,kro=1}->HttpConnection@3d078a0e[p=HttpParser{s=START,0 of -1},g=HttpGenerator@6d5dac10{s=START}]=>HttpChannelOverHttp@6c0b0c4f{s=HttpChannelState@359800fd{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=0,c=false/false,a=IDLE,uri=null,age=0}
+18:15:48.037 [] [qtp1204296383-22] DEBUG org.eclipse.jetty.io.ChannelEndPoint - filled 629 HeapByteBuffer@6a295bff[p=0,l=629,c=8192,r=629]={<<<GET /account HTTP/1.1\r\nCo...        }\r\n    ]\r\n    }>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00}
+18:15:48.037 [] [qtp1204296383-30] DEBUG org.eclipse.jetty.io.ChannelEndPoint - filled -1 HeapByteBuffer@57467b64[p=0,l=0,c=8192,r=0]={<<<>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00}
+18:15:48.038 [] [qtp1204296383-30] DEBUG org.eclipse.jetty.http.HttpParser - atEOF HttpParser{s=START,0 of -1}
+18:15:48.038 [] [qtp1204296383-22] DEBUG o.e.jetty.server.HttpConnection - HttpConnection@60960685::SocketChannelEndPoint@65f62619{l=/[0:0:0:0:0:0:0:1]:8081,r=/[0:0:0:0:0:0:0:1]:49897,OPEN,fill=-,flush=-,to=5/30000}{io=0/0,kio=0,kro=1}->HttpConnection@60960685[p=HttpParser{s=START,0 of -1},g=HttpGenerator@62ffff9e{s=START}]=>HttpChannelOverHttp@328d6f6a{s=HttpChannelState@7323d797{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=0,c=false/false,a=IDLE,uri=null,age=0} filled 629 HeapByteBuffer@6a295bff[p=0,l=629,c=8192,r=629]={<<<GET /account HTTP/1.1\r\nCo...        }\r\n    ]\r\n    }>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00}
+18:15:48.043 [] [qtp1204296383-30] DEBUG o.e.jetty.server.HttpConnection - HttpConnection@3d078a0e::SocketChannelEndPoint@23baaf4f{l=/[0:0:0:0:0:0:0:1]:8081,r=/[0:0:0:0:0:0:0:1]:49896,ISHUT,fill=-,flush=-,to=19/30000}{io=0/0,kio=0,kro=1}->HttpConnection@3d078a0e[p=HttpParser{s=START,0 of -1},g=HttpGenerator@6d5dac10{s=START}]=>HttpChannelOverHttp@6c0b0c4f{s=HttpChannelState@359800fd{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=0,c=false/false,a=IDLE,uri=null,age=0} filled -1 HeapByteBuffer@57467b64[p=0,l=0,c=8192,r=0]={<<<>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00}
+18:15:48.043 [] [qtp1204296383-22] DEBUG o.e.jetty.server.HttpConnection - HttpConnection@60960685::SocketChannelEndPoint@65f62619{l=/[0:0:0:0:0:0:0:1]:8081,r=/[0:0:0:0:0:0:0:1]:49897,OPEN,fill=-,flush=-,to=11/30000}{io=0/0,kio=0,kro=1}->HttpConnection@60960685[p=HttpParser{s=START,0 of -1},g=HttpGenerator@62ffff9e{s=START}]=>HttpChannelOverHttp@328d6f6a{s=HttpChannelState@7323d797{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=0,c=false/false,a=IDLE,uri=null,age=0} parse HeapByteBuffer@6a295bff[p=0,l=629,c=8192,r=629]={<<<GET /account HTTP/1.1\r\nCo...        }\r\n    ]\r\n    }>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00} {}
+18:15:48.044 [] [qtp1204296383-22] DEBUG org.eclipse.jetty.http.HttpParser - parseNext s=START HeapByteBuffer@6a295bff[p=0,l=629,c=8192,r=629]={<<<GET /account HTTP/1.1\r\nCo...        }\r\n    ]\r\n    }>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00}
+18:15:48.044 [] [qtp1204296383-22] DEBUG org.eclipse.jetty.http.HttpParser - START --> SPACE1
+18:15:48.044 [] [qtp1204296383-30] DEBUG o.e.jetty.server.HttpConnection - HttpConnection@3d078a0e::SocketChannelEndPoint@23baaf4f{l=/[0:0:0:0:0:0:0:1]:8081,r=/[0:0:0:0:0:0:0:1]:49896,ISHUT,fill=-,flush=-,to=24/30000}{io=0/0,kio=0,kro=1}->HttpConnection@3d078a0e[p=HttpParser{s=START,0 of -1},g=HttpGenerator@6d5dac10{s=START}]=>HttpChannelOverHttp@6c0b0c4f{s=HttpChannelState@359800fd{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=0,c=false/false,a=IDLE,uri=null,age=0} parse HeapByteBuffer@57467b64[p=0,l=0,c=8192,r=0]={<<<>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00} {}
+18:15:48.045 [] [qtp1204296383-30] DEBUG org.eclipse.jetty.http.HttpParser - parseNext s=START HeapByteBuffer@57467b64[p=0,l=0,c=8192,r=0]={<<<>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00}
+18:15:48.045 [] [qtp1204296383-22] DEBUG org.eclipse.jetty.http.HttpParser - SPACE1 --> URI
+18:15:48.045 [] [qtp1204296383-30] DEBUG org.eclipse.jetty.http.HttpParser - START --> CLOSED
+18:15:48.045 [] [qtp1204296383-22] DEBUG org.eclipse.jetty.http.HttpParser - URI --> SPACE2
+18:15:48.046 [] [qtp1204296383-22] DEBUG org.eclipse.jetty.http.HttpParser - SPACE2 --> REQUEST_VERSION
+18:15:48.046 [] [qtp1204296383-22] DEBUG org.eclipse.jetty.http.HttpParser - REQUEST_VERSION --> HEADER
+18:15:48.046 [] [qtp1204296383-30] DEBUG o.eclipse.jetty.io.AbstractEndPoint - close SocketChannelEndPoint@23baaf4f{l=/[0:0:0:0:0:0:0:1]:8081,r=/[0:0:0:0:0:0:0:1]:49896,ISHUT,fill=-,flush=-,to=27/30000}{io=0/0,kio=0,kro=1}->HttpConnection@3d078a0e[p=HttpParser{s=CLOSED,0 of -1},g=HttpGenerator@6d5dac10{s=START}]=>HttpChannelOverHttp@6c0b0c4f{s=HttpChannelState@359800fd{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=0,c=false/false,a=IDLE,uri=null,age=0}
+18:15:48.047 [] [qtp1204296383-22] DEBUG org.eclipse.jetty.http.HttpParser - HEADER:Content-Type: application/json --> IN_VALUE
+18:15:48.047 [] [qtp1204296383-22] DEBUG org.eclipse.jetty.http.HttpParser - HEADER:Content-Type: application/json --> FIELD
+18:15:48.048 [] [qtp1204296383-22] DEBUG org.eclipse.jetty.http.HttpParser - HEADER:User-Agent --> VALUE
+18:15:48.048 [] [qtp1204296383-30] DEBUG o.eclipse.jetty.io.AbstractEndPoint - close(null) SocketChannelEndPoint@23baaf4f{l=/[0:0:0:0:0:0:0:1]:8081,r=/[0:0:0:0:0:0:0:1]:49896,ISHUT,fill=-,flush=-,to=28/30000}{io=0/0,kio=0,kro=1}->HttpConnection@3d078a0e[p=HttpParser{s=CLOSED,0 of -1},g=HttpGenerator@6d5dac10{s=START}]=>HttpChannelOverHttp@6c0b0c4f{s=HttpChannelState@359800fd{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=0,c=false/false,a=IDLE,uri=null,age=0}
+18:15:48.048 [] [qtp1204296383-22] DEBUG org.eclipse.jetty.http.HttpParser - HEADER:User-Agent --> IN_VALUE
+18:15:48.048 [] [qtp1204296383-22] DEBUG org.eclipse.jetty.http.HttpParser - HEADER:User-Agent --> FIELD
+18:15:48.049 [] [qtp1204296383-22] DEBUG org.eclipse.jetty.http.HttpParser - HEADER:Accept: */* --> IN_VALUE
+18:15:48.049 [] [qtp1204296383-30] DEBUG org.eclipse.jetty.io.ChannelEndPoint - doClose SocketChannelEndPoint@23baaf4f{l=/[0:0:0:0:0:0:0:1]:8081,r=/[0:0:0:0:0:0:0:1]:49896,CLOSED,fill=-,flush=-,to=29/30000}{io=0/0,kio=0,kro=1}->HttpConnection@3d078a0e[p=HttpParser{s=CLOSED,0 of -1},g=HttpGenerator@6d5dac10{s=START}]=>HttpChannelOverHttp@6c0b0c4f{s=HttpChannelState@359800fd{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=0,c=false/false,a=IDLE,uri=null,age=0}
+18:15:48.049 [] [qtp1204296383-22] DEBUG org.eclipse.jetty.http.HttpParser - HEADER:Accept: */* --> FIELD
+18:15:48.049 [] [qtp1204296383-22] DEBUG org.eclipse.jetty.http.HttpParser - HEADER: --> IN_NAME
+18:15:48.050 [] [qtp1204296383-22] DEBUG org.eclipse.jetty.http.HttpParser - HEADER:Postman-Token --> VALUE
+18:15:48.050 [] [qtp1204296383-22] DEBUG org.eclipse.jetty.http.HttpParser - HEADER:Postman-Token --> IN_VALUE
+18:15:48.050 [] [qtp1204296383-22] DEBUG org.eclipse.jetty.http.HttpParser - HEADER:Postman-Token --> FIELD
+18:15:48.050 [] [qtp1204296383-22] DEBUG org.eclipse.jetty.http.HttpParser - HEADER:Host --> VALUE
+18:15:48.050 [] [qtp1204296383-22] DEBUG org.eclipse.jetty.http.HttpParser - HEADER:Host --> IN_VALUE
+18:15:48.050 [] [qtp1204296383-22] DEBUG org.eclipse.jetty.http.HttpParser - HEADER:Host --> FIELD
+18:15:48.051 [] [qtp1204296383-30] DEBUG org.eclipse.jetty.io.FillInterest - onClose FillInterest@33b57766{null}
+18:15:48.052 [] [qtp1204296383-22] DEBUG org.eclipse.jetty.http.HttpParser - HEADER:Accept-Encoding: gzip, deflate, br --> IN_VALUE
+18:15:48.052 [] [qtp1204296383-22] DEBUG org.eclipse.jetty.http.HttpParser - HEADER:Accept-Encoding: gzip, deflate, br --> FIELD
+18:15:48.052 [] [qtp1204296383-22] DEBUG org.eclipse.jetty.http.HttpParser - HEADER:Connection: keep-alive --> IN_VALUE
+18:15:48.052 [] [qtp1204296383-22] DEBUG org.eclipse.jetty.http.HttpParser - HEADER:Connection: keep-alive --> FIELD
+18:15:48.052 [] [qtp1204296383-22] DEBUG org.eclipse.jetty.http.HttpParser - HEADER:Content-Length --> VALUE
+18:15:48.052 [] [qtp1204296383-22] DEBUG org.eclipse.jetty.http.HttpParser - HEADER:Content-Length --> IN_VALUE
+18:15:48.053 [] [qtp1204296383-22] DEBUG org.eclipse.jetty.http.HttpParser - HEADER:Content-Length --> FIELD
+18:15:48.053 [] [qtp1204296383-22] DEBUG org.eclipse.jetty.http.HttpParser - HEADER --> CONTENT
+18:15:48.054 [] [qtp1204296383-30] DEBUG o.e.jetty.server.HttpConnection - HttpConnection@3d078a0e::SocketChannelEndPoint@23baaf4f{l=/[0:0:0:0:0:0:0:1]:8081,r=/[0:0:0:0:0:0:0:1]:49896,CLOSED,fill=-,flush=-,to=34/30000}{io=0/0,kio=-1,kro=-1}->HttpConnection@3d078a0e[p=HttpParser{s=CLOSED,0 of -1},g=HttpGenerator@6d5dac10{s=START}]=>HttpChannelOverHttp@6c0b0c4f{s=HttpChannelState@359800fd{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=0,c=false/false,a=IDLE,uri=null,age=0} parsed false HttpParser{s=CLOSED,0 of -1}
+18:15:48.056 [] [qtp1204296383-22] DEBUG o.e.jetty.server.HttpConnection - HttpConnection@60960685::SocketChannelEndPoint@65f62619{l=/[0:0:0:0:0:0:0:1]:8081,r=/[0:0:0:0:0:0:0:1]:49897,OPEN,fill=-,flush=-,to=23/30000}{io=0/0,kio=0,kro=1}->HttpConnection@60960685[p=HttpParser{s=CONTENT,0 of 368},g=HttpGenerator@62ffff9e{s=START}]=>HttpChannelOverHttp@328d6f6a{s=HttpChannelState@7323d797{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=1,c=false/false,a=IDLE,uri=//localhost:8081/account,age=2} parsed true HttpParser{s=CONTENT,0 of 368}
+18:15:48.056 [] [qtp1204296383-30] DEBUG o.e.jetty.server.HttpConnection - releaseRequestBuffer HttpConnection@3d078a0e::SocketChannelEndPoint@23baaf4f{l=/[0:0:0:0:0:0:0:1]:8081,r=/[0:0:0:0:0:0:0:1]:49896,CLOSED,fill=-,flush=-,to=36/30000}{io=0/0,kio=-1,kro=-1}->HttpConnection@3d078a0e[p=HttpParser{s=CLOSED,0 of -1},g=HttpGenerator@6d5dac10{s=START}]=>HttpChannelOverHttp@6c0b0c4f{s=HttpChannelState@359800fd{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=0,c=false/false,a=IDLE,uri=null,age=0}
+18:15:48.056 [] [qtp1204296383-22] DEBUG o.e.jetty.server.HttpChannelState - handling HttpChannelState@7323d797{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0}
+18:15:48.057 [] [qtp1204296383-31] DEBUG o.e.jetty.io.AbstractConnection - onClose HttpConnection@3d078a0e::SocketChannelEndPoint@23baaf4f{l=/[0:0:0:0:0:0:0:1]:8081,r=/[0:0:0:0:0:0:0:1]:49896,CLOSED,fill=-,flush=-,to=37/30000}{io=0/0,kio=-1,kro=-1}->HttpConnection@3d078a0e[p=HttpParser{s=CLOSED,0 of -1},g=HttpGenerator@6d5dac10{s=START}]=>HttpChannelOverHttp@6c0b0c4f{s=HttpChannelState@359800fd{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=0,c=false/false,a=IDLE,uri=null,age=0}
+18:15:48.060 [] [qtp1204296383-30] DEBUG o.eclipse.jetty.io.AbstractEndPoint - shutdownOutput SocketChannelEndPoint@23baaf4f{l=/[0:0:0:0:0:0:0:1]:8081,r=/[0:0:0:0:0:0:0:1]:49896,CLOSED,fill=-,flush=-,to=40/30000}{io=0/0,kio=-1,kro=-1}->HttpConnection@3d078a0e[p=HttpParser{s=CLOSED,0 of -1},g=HttpGenerator@6d5dac10{s=START}]=>HttpChannelOverHttp@6c0b0c4f{s=HttpChannelState@359800fd{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=0,c=false/false,a=IDLE,uri=null,age=0}
+18:15:48.062 [] [qtp1204296383-30] DEBUG o.e.jetty.server.HttpConnection - HttpConnection@3d078a0e::SocketChannelEndPoint@23baaf4f{l=/[0:0:0:0:0:0:0:1]:8081,r=/[0:0:0:0:0:0:0:1]:49896,CLOSED,fill=-,flush=-,to=41/30000}{io=0/0,kio=-1,kro=-1}->HttpConnection@3d078a0e[p=HttpParser{s=CLOSED,0 of -1},g=HttpGenerator@6d5dac10{s=START}]=>HttpChannelOverHttp@6c0b0c4f{s=HttpChannelState@359800fd{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=0,c=false/false,a=IDLE,uri=null,age=0} onFillable exit HttpChannelState@359800fd{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0} null
+18:15:48.140 [] [qtp1204296383-22] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider
+18:15:48.155 [] [qtp1204296383-22] DEBUG o.h.i.internal.IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+18:15:48.159 [] [qtp1204296383-22] DEBUG o.h.i.internal.IntegratorServiceImpl - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+18:15:48.165 [] [qtp1204296383-22] DEBUG o.h.i.internal.IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+18:15:48.207 [] [qtp1204296383-22] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.0.Final
+18:15:48.208 [] [qtp1204296383-22] DEBUG org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+18:15:48.453 [] [qtp1204296383-22] DEBUG o.h.b.j.i.s.LocalXmlResourceResolver - Interpreting public/system identifier : [-//Hibernate/Hibernate Configuration DTD 3.0//EN] - [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd]
+18:15:48.453 [] [qtp1204296383-22] DEBUG o.h.b.j.i.s.LocalXmlResourceResolver - Recognized hibernate-configuration identifier; attempting to resolve on classpath under org/hibernate/
+18:15:48.458 [] [qtp1204296383-22] DEBUG o.h.b.c.internal.JaxbCfgProcessor - cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+18:15:48.726 [] [qtp1204296383-22] DEBUG org.hibernate.cfg.Configuration - Building session factory using internal StandardServiceRegistryBuilder
+18:15:48.734 [] [qtp1204296383-22] DEBUG o.h.service.spi.ServiceBinding - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+18:15:48.735 [] [qtp1204296383-22] DEBUG org.hibernate.cfg.Configuration - Building session factory using provided StandardServiceRegistry
+18:15:48.747 [] [qtp1204296383-22] DEBUG o.h.c.i.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+18:15:48.749 [] [qtp1204296383-22] DEBUG o.h.c.i.RegionFactoryInitiator - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+18:15:48.768 [] [qtp1204296383-22] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+18:15:48.802 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@3188f813
+18:15:48.802 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@3188f813
+18:15:48.802 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@3188f813
+18:15:48.803 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@392ebe6e
+18:15:48.804 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@7d030bd8
+18:15:48.804 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@10aaed1b
+18:15:48.805 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@1a8c7eef
+18:15:48.805 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@1a8c7eef
+18:15:48.805 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@1a8c7eef
+18:15:48.806 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@32cc3050
+18:15:48.806 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@32cc3050
+18:15:48.806 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@32cc3050
+18:15:48.807 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@2513d820
+18:15:48.807 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@2513d820
+18:15:48.807 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@2513d820
+18:15:48.808 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@cb6b52f
+18:15:48.808 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@cb6b52f
+18:15:48.808 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@cb6b52f
+18:15:48.809 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@1016ce0c
+18:15:48.809 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@1016ce0c
+18:15:48.809 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@1016ce0c
+18:15:48.809 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@480798bb
+18:15:48.809 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@480798bb
+18:15:48.810 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@480798bb
+18:15:48.810 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@11f1ee56
+18:15:48.810 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@11f1ee56
+18:15:48.810 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@11f1ee56
+18:15:48.811 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@1ddfd859
+18:15:48.811 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@1ddfd859
+18:15:48.812 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@14bd7967
+18:15:48.812 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@14bd7967
+18:15:48.812 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@45308c1
+18:15:48.813 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@45308c1
+18:15:48.813 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@5eefa075
+18:15:48.813 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@7a6d4475
+18:15:48.814 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@71c02e8b
+18:15:48.814 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@71c02e8b
+18:15:48.815 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration Duration -> org.hibernate.type.DurationType@c4ff48f
+18:15:48.816 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@c4ff48f
+18:15:48.818 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration Instant -> org.hibernate.type.InstantType@40aae1fa
+18:15:48.818 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@40aae1fa
+18:15:48.819 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@6ebd766d
+18:15:48.819 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@6ebd766d
+18:15:48.819 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@25673c9e
+18:15:48.820 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@25673c9e
+18:15:48.820 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@1eb67634
+18:15:48.820 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@1eb67634
+18:15:48.821 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@44827b7f
+18:15:48.822 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@44827b7f
+18:15:48.823 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@6a1425bc
+18:15:48.823 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@6a1425bc
+18:15:48.824 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@13ba7a2a
+18:15:48.825 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@13ba7a2a
+18:15:48.826 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@2c620073
+18:15:48.826 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@2c620073
+18:15:48.827 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@141c7547
+18:15:48.827 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@141c7547
+18:15:48.828 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@7946b83b
+18:15:48.828 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@7946b83b
+18:15:48.829 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@7946b83b
+18:15:48.830 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@76bbc880
+18:15:48.831 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@2f965d9
+18:15:48.831 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@2f965d9
+18:15:48.831 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@2f965d9
+18:15:48.832 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@6d9db2c8
+18:15:48.834 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration calendar_time -> org.hibernate.type.CalendarTimeType@604e880e
+18:15:48.835 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@4083d88e
+18:15:48.835 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@4083d88e
+18:15:48.836 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@275d5aa3
+18:15:48.836 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@275d5aa3
+18:15:48.836 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@196c58dd
+18:15:48.837 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@196c58dd
+18:15:48.837 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@69ce57d0
+18:15:48.837 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@69ce57d0
+18:15:48.838 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@767fd4fa
+18:15:48.838 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@767fd4fa
+18:15:48.839 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@9a6a550
+18:15:48.840 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@39881527
+18:15:48.840 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@39881527
+18:15:48.840 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@39881527
+18:15:48.841 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@5c42d97c
+18:15:48.841 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@5c42d97c
+18:15:48.841 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@5c42d97c
+18:15:48.842 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration row_version -> org.hibernate.type.RowVersionType@5832b8a1
+18:15:48.842 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@3e5b813
+18:15:48.843 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@11add357
+18:15:48.843 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@11add357
+18:15:48.843 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@11add357
+18:15:48.844 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@182b9a73
+18:15:48.844 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@182b9a73
+18:15:48.844 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@182b9a73
+18:15:48.845 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@7979d454
+18:15:48.845 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@79143a13
+18:15:48.846 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@39293f0a
+18:15:48.847 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@39293f0a
+18:15:48.847 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@6cb943f0
+18:15:48.849 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@44095c7f
+18:15:48.850 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@44095c7f
+18:15:48.851 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@110d64d8
+18:15:48.852 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@110d64d8
+18:15:48.852 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@2aa68f43
+18:15:48.852 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@2f88bc22
+18:15:48.853 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@5b8f4858
+18:15:48.855 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@5de9b530
+18:15:48.856 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@5de9b530
+18:15:48.856 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@1b53b169
+18:15:48.856 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@338a277a
+18:15:48.856 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@6a3c1c7f
+18:15:48.856 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@7f820f11
+18:15:48.856 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@79dc3171
+18:15:48.856 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@1b8f78c7
+18:15:48.856 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@11da502d
+18:15:48.856 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@7ecf2f80
+18:15:48.889 [] [qtp1204296383-22] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+18:15:48.889 [] [qtp1204296383-22] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+18:15:48.890 [] [qtp1204296383-22] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+18:15:48.891 [] [qtp1204296383-22] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+18:15:48.891 [] [qtp1204296383-22] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+18:15:48.892 [] [qtp1204296383-22] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+18:15:48.893 [] [qtp1204296383-22] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+18:15:48.895 [] [qtp1204296383-22] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+18:15:48.896 [] [qtp1204296383-22] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+18:15:48.897 [] [qtp1204296383-22] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+18:15:48.898 [] [qtp1204296383-22] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+18:15:48.899 [] [qtp1204296383-22] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+18:15:48.899 [] [qtp1204296383-22] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+18:15:48.902 [] [qtp1204296383-22] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+18:15:48.907 [] [qtp1204296383-22] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+18:15:48.917 [] [qtp1204296383-22] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://javafs-210927-sz.ctjhaliedh90.us-east-2.rds.amazonaws.com:5432/ers_project1]
+18:15:48.918 [] [qtp1204296383-22] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=password, user=postgres}
+18:15:48.918 [] [qtp1204296383-22] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+18:15:48.922 [] [qtp1204296383-22] DEBUG o.h.e.j.c.i.DriverManagerConnectionProviderImpl - Initializing Connection pool with 1 Connections
+18:15:48.922 [] [qtp1204296383-22] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+18:15:49.935 [] [qtp1204296383-22] DEBUG o.h.e.j.e.i.JdbcEnvironmentInitiator - Database ->
+       name : PostgreSQL
+    version : 12.8
+      major : 12
+      minor : 8
+18:15:49.935 [] [qtp1204296383-22] DEBUG o.h.e.j.e.i.JdbcEnvironmentInitiator - Driver ->
+       name : PostgreSQL JDBC Driver
+    version : 42.2.24
+      major : 42
+      minor : 2
+18:15:49.935 [] [qtp1204296383-22] DEBUG o.h.e.j.e.i.JdbcEnvironmentInitiator - JDBC version : 4.2
+18:15:49.946 [] [qtp1204296383-22] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+18:15:49.963 [] [qtp1204296383-22] DEBUG o.h.e.j.e.s.IdentifierHelperBuilder - JDBC driver metadata reported database stores quoted identifiers in neither upper, lower nor mixed case
+18:15:50.250 [] [qtp1204296383-22] DEBUG o.h.boot.model.relational.Namespace - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+18:15:50.253 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration pg-uuid -> org.hibernate.type.PostgresUUIDType@26022ceb
+18:15:50.253 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.PostgresUUIDType@26022ceb
+18:15:50.254 [] [qtp1204296383-22] DEBUG org.hibernate.type.BasicTypeRegistry - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@767fd4fa
+18:15:50.256 [] [qtp1204296383-22] DEBUG o.h.type.spi.TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@5e9f5cf1] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@33b42a5a]
+18:15:50.285 [] [qtp1204296383-22] DEBUG o.h.b.m.s.i.a.AnnotationMetadataSourceProcessorImpl - Encountered a non-categorized annotated class [com.revature.models.Login]; ignoring
+18:15:50.301 [] [qtp1204296383-22] DEBUG org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: com.revature.models.Account
+18:15:50.322 [] [qtp1204296383-22] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+18:15:50.326 [] [qtp1204296383-22] DEBUG o.h.cfg.annotations.EntityBinder - Import with entity name Account
+18:15:50.330 [] [qtp1204296383-22] DEBUG o.h.cfg.annotations.EntityBinder - Bind entity com.revature.models.Account on table Account
+18:15:50.357 [] [qtp1204296383-22] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Account), mappingColumn=accountId, insertable=true, updatable=true, unique=true}
+18:15:50.360 [] [qtp1204296383-22] DEBUG o.h.b.internal.ClassLoaderAccessImpl - Not known whether passed class name [com.revature.models.Account] is safe
+18:15:50.360 [] [qtp1204296383-22] DEBUG o.h.b.internal.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.revature.models.Account
+18:15:50.361 [] [qtp1204296383-22] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property accountId with lazy=false
+18:15:50.362 [] [qtp1204296383-22] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.revature.models.Account:accountId]
+18:15:50.365 [] [qtp1204296383-22] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for accountId
+18:15:50.367 [] [qtp1204296383-22] DEBUG o.h.cfg.annotations.PropertyBinder - Building property accountId
+18:15:50.371 [] [qtp1204296383-22] DEBUG org.hibernate.cfg.BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(accountId)]), accountId, identity, , ...)
+18:15:50.372 [] [qtp1204296383-22] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Account), mappingColumn=accountType, insertable=true, updatable=true, unique=false}
+18:15:50.372 [] [qtp1204296383-22] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property accountType with lazy=false
+18:15:50.372 [] [qtp1204296383-22] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.revature.models.Account:accountType]
+18:15:50.372 [] [qtp1204296383-22] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for accountType
+18:15:50.372 [] [qtp1204296383-22] DEBUG o.h.cfg.annotations.PropertyBinder - Building property accountType
+18:15:50.372 [] [qtp1204296383-22] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Account), mappingColumn=firstName, insertable=true, updatable=true, unique=false}
+18:15:50.372 [] [qtp1204296383-22] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property firstName with lazy=false
+18:15:50.373 [] [qtp1204296383-22] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.revature.models.Account:firstName]
+18:15:50.373 [] [qtp1204296383-22] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for firstName
+18:15:50.373 [] [qtp1204296383-22] DEBUG o.h.cfg.annotations.PropertyBinder - Building property firstName
+18:15:50.373 [] [qtp1204296383-22] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Account), mappingColumn=lastName, insertable=true, updatable=true, unique=false}
+18:15:50.373 [] [qtp1204296383-22] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property lastName with lazy=false
+18:15:50.373 [] [qtp1204296383-22] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.revature.models.Account:lastName]
+18:15:50.373 [] [qtp1204296383-22] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for lastName
+18:15:50.373 [] [qtp1204296383-22] DEBUG o.h.cfg.annotations.PropertyBinder - Building property lastName
+18:15:50.375 [] [qtp1204296383-22] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='requestId', referencedColumn='', mappedBy=''}
+18:15:50.375 [] [qtp1204296383-22] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Account), mappingColumn=requests, insertable=true, updatable=true, unique=false}
+18:15:50.377 [] [qtp1204296383-22] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Account), mappingColumn=null, insertable=true, updatable=true, unique=false}
+18:15:50.388 [] [qtp1204296383-22] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Account), mappingColumn=element, insertable=true, updatable=true, unique=false}
+18:15:50.389 [] [qtp1204296383-22] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Account), mappingColumn=requests_KEY, insertable=true, updatable=true, unique=false}
+18:15:50.390 [] [qtp1204296383-22] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='requests_KEY', referencedColumn='null', mappedBy='null'}
+18:15:50.392 [] [qtp1204296383-22] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy=''}
+18:15:50.392 [] [qtp1204296383-22] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy=''}
+18:15:50.392 [] [qtp1204296383-22] DEBUG o.h.cfg.annotations.CollectionBinder - Collection role: com.revature.models.Account.requests
+18:15:50.395 [] [qtp1204296383-22] DEBUG o.h.cfg.annotations.PropertyBinder - Building property requests
+18:15:50.400 [] [qtp1204296383-22] DEBUG org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: com.revature.models.Request
+18:15:50.400 [] [qtp1204296383-22] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+18:15:50.401 [] [qtp1204296383-22] DEBUG o.h.cfg.annotations.EntityBinder - Import with entity name Request
+18:15:50.401 [] [qtp1204296383-22] DEBUG o.h.cfg.annotations.EntityBinder - Bind entity com.revature.models.Request on table Request
+18:15:50.402 [] [qtp1204296383-22] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Request), mappingColumn=requestId, insertable=true, updatable=true, unique=true}
+18:15:50.402 [] [qtp1204296383-22] DEBUG o.h.b.internal.ClassLoaderAccessImpl - Not known whether passed class name [com.revature.models.Request] is safe
+18:15:50.402 [] [qtp1204296383-22] DEBUG o.h.b.internal.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.revature.models.Request
+18:15:50.402 [] [qtp1204296383-22] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property requestId with lazy=false
+18:15:50.402 [] [qtp1204296383-22] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.revature.models.Request:requestId]
+18:15:50.402 [] [qtp1204296383-22] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for requestId
+18:15:50.402 [] [qtp1204296383-22] DEBUG o.h.cfg.annotations.PropertyBinder - Building property requestId
+18:15:50.402 [] [qtp1204296383-22] DEBUG org.hibernate.cfg.BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(requestId)]), requestId, identity, , ...)
+18:15:50.403 [] [qtp1204296383-22] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Request), mappingColumn=amount, insertable=true, updatable=true, unique=false}
+18:15:50.403 [] [qtp1204296383-22] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property amount with lazy=false
+18:15:50.403 [] [qtp1204296383-22] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.revature.models.Request:amount]
+18:15:50.403 [] [qtp1204296383-22] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for amount
+18:15:50.403 [] [qtp1204296383-22] DEBUG o.h.cfg.annotations.PropertyBinder - Building property amount
+18:15:50.403 [] [qtp1204296383-22] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Request), mappingColumn=answered, insertable=true, updatable=true, unique=false}
+18:15:50.403 [] [qtp1204296383-22] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property answered with lazy=false
+18:15:50.403 [] [qtp1204296383-22] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.revature.models.Request:answered]
+18:15:50.404 [] [qtp1204296383-22] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for answered
+18:15:50.404 [] [qtp1204296383-22] DEBUG o.h.cfg.annotations.PropertyBinder - Building property answered
+18:15:50.404 [] [qtp1204296383-22] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Request), mappingColumn=description, insertable=true, updatable=true, unique=false}
+18:15:50.404 [] [qtp1204296383-22] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property description with lazy=false
+18:15:50.404 [] [qtp1204296383-22] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.revature.models.Request:description]
+18:15:50.404 [] [qtp1204296383-22] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for description
+18:15:50.404 [] [qtp1204296383-22] DEBUG o.h.cfg.annotations.PropertyBinder - Building property description
+18:15:50.404 [] [qtp1204296383-22] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Request), mappingColumn=status, insertable=true, updatable=true, unique=false}
+18:15:50.404 [] [qtp1204296383-22] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property status with lazy=false
+18:15:50.405 [] [qtp1204296383-22] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.revature.models.Request:status]
+18:15:50.405 [] [qtp1204296383-22] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for status
+18:15:50.405 [] [qtp1204296383-22] DEBUG o.h.cfg.annotations.PropertyBinder - Building property status
+18:15:50.405 [] [qtp1204296383-22] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Request), mappingColumn=submitted, insertable=true, updatable=true, unique=false}
+18:15:50.405 [] [qtp1204296383-22] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property submitted with lazy=false
+18:15:50.405 [] [qtp1204296383-22] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.revature.models.Request:submitted]
+18:15:50.405 [] [qtp1204296383-22] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for submitted
+18:15:50.405 [] [qtp1204296383-22] DEBUG o.h.cfg.annotations.PropertyBinder - Building property submitted
+18:15:50.405 [] [qtp1204296383-22] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Request), mappingColumn=type, insertable=true, updatable=true, unique=false}
+18:15:50.405 [] [qtp1204296383-22] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property type with lazy=false
+18:15:50.405 [] [qtp1204296383-22] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.revature.models.Request:type]
+18:15:50.405 [] [qtp1204296383-22] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for type
+18:15:50.406 [] [qtp1204296383-22] DEBUG o.h.cfg.annotations.PropertyBinder - Building property type
+18:15:50.407 [] [qtp1204296383-22] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for accountId
+18:15:50.407 [] [qtp1204296383-22] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for accountType
+18:15:50.407 [] [qtp1204296383-22] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for firstName
+18:15:50.407 [] [qtp1204296383-22] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for lastName
+18:15:50.407 [] [qtp1204296383-22] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for requestId
+18:15:50.407 [] [qtp1204296383-22] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for amount
+18:15:50.408 [] [qtp1204296383-22] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for answered
+18:15:50.408 [] [qtp1204296383-22] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for description
+18:15:50.408 [] [qtp1204296383-22] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for status
+18:15:50.408 [] [qtp1204296383-22] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for submitted
+18:15:50.408 [] [qtp1204296383-22] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for type
+18:15:50.409 [] [qtp1204296383-22] DEBUG org.hibernate.mapping.PrimaryKey - Forcing column [accountid] to be non-null as it is part of the primary key for table [account]
+18:15:50.409 [] [qtp1204296383-22] DEBUG org.hibernate.mapping.PrimaryKey - Forcing column [requestid] to be non-null as it is part of the primary key for table [request]
+18:15:50.409 [] [qtp1204296383-22] DEBUG o.hibernate.cfg.CollectionSecondPass - Second pass for collection: com.revature.models.Account.requests
+18:15:50.410 [] [qtp1204296383-22] DEBUG o.h.cfg.annotations.CollectionBinder - Binding a OneToMany: com.revature.models.Account.requests through a foreign key
+18:15:50.410 [] [qtp1204296383-22] DEBUG o.h.cfg.annotations.CollectionBinder - Mapping collection: com.revature.models.Account.requests -> Request
+18:15:50.414 [] [qtp1204296383-22] DEBUG o.hibernate.cfg.CollectionSecondPass - Mapped collection key: requestId, one-to-many: com.revature.models.Request
+18:15:50.414 [] [qtp1204296383-22] DEBUG o.h.b.i.InFlightMetadataCollectorImpl - Resolving reference to class: com.revature.models.Account
+18:15:50.417 [] [qtp1204296383-22] DEBUG o.h.b.i.InFlightMetadataCollectorImpl - Resolving reference to class: com.revature.models.Account
+18:15:50.450 [] [qtp1204296383-22] DEBUG o.h.internal.SessionFactoryImpl - Building session factory
+18:15:50.451 [] [qtp1204296383-22] DEBUG org.hibernate.cfg.Settings - SessionFactory name : null
+18:15:50.452 [] [qtp1204296383-22] DEBUG org.hibernate.cfg.Settings - Automatic flush during beforeCompletion(): enabled
+18:15:50.452 [] [qtp1204296383-22] DEBUG org.hibernate.cfg.Settings - Automatic session close at end of transaction: disabled
+18:15:50.452 [] [qtp1204296383-22] DEBUG org.hibernate.cfg.Settings - Statistics: disabled
+18:15:50.452 [] [qtp1204296383-22] DEBUG org.hibernate.cfg.Settings - Deleted entity synthetic identifier rollback: disabled
+18:15:50.452 [] [qtp1204296383-22] DEBUG org.hibernate.cfg.Settings - Default entity-mode: pojo
+18:15:50.452 [] [qtp1204296383-22] DEBUG org.hibernate.cfg.Settings - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+18:15:50.452 [] [qtp1204296383-22] DEBUG org.hibernate.cfg.Settings - Allow initialization of lazy state outside session : disabled
+18:15:50.452 [] [qtp1204296383-22] DEBUG org.hibernate.cfg.Settings - Using BatchFetchStyle : LEGACY
+18:15:50.452 [] [qtp1204296383-22] DEBUG org.hibernate.cfg.Settings - Default batch fetch size: -1
+18:15:50.452 [] [qtp1204296383-22] DEBUG org.hibernate.cfg.Settings - Maximum outer join fetch depth: null
+18:15:50.452 [] [qtp1204296383-22] DEBUG org.hibernate.cfg.Settings - Default null ordering: NONE
+18:15:50.452 [] [qtp1204296383-22] DEBUG org.hibernate.cfg.Settings - Order SQL updates by primary key: disabled
+18:15:50.452 [] [qtp1204296383-22] DEBUG org.hibernate.cfg.Settings - Order SQL inserts for batching: disabled
+18:15:50.452 [] [qtp1204296383-22] DEBUG org.hibernate.cfg.Settings - multi-tenancy strategy : NONE
+18:15:50.452 [] [qtp1204296383-22] DEBUG org.hibernate.cfg.Settings - JTA Track by Thread: enabled
+18:15:50.452 [] [qtp1204296383-22] DEBUG org.hibernate.cfg.Settings - Query language substitutions: {}
+18:15:50.453 [] [qtp1204296383-22] DEBUG org.hibernate.cfg.Settings - Named query checking : enabled
+18:15:50.453 [] [qtp1204296383-22] DEBUG org.hibernate.cfg.Settings - Second-level cache: disabled
+18:15:50.453 [] [qtp1204296383-22] DEBUG org.hibernate.cfg.Settings - Second-level query cache: disabled
+18:15:50.453 [] [qtp1204296383-22] DEBUG org.hibernate.cfg.Settings - Second-level query cache factory: null
+18:15:50.453 [] [qtp1204296383-22] DEBUG org.hibernate.cfg.Settings - Second-level cache region prefix: null
+18:15:50.453 [] [qtp1204296383-22] DEBUG org.hibernate.cfg.Settings - Optimize second-level cache for minimal puts: disabled
+18:15:50.453 [] [qtp1204296383-22] DEBUG org.hibernate.cfg.Settings - Structured second-level cache entries: disabled
+18:15:50.453 [] [qtp1204296383-22] DEBUG org.hibernate.cfg.Settings - Second-level cache direct-reference entries: disabled
+18:15:50.453 [] [qtp1204296383-22] DEBUG org.hibernate.cfg.Settings - Automatic eviction of collection cache: disabled
+18:15:50.453 [] [qtp1204296383-22] DEBUG org.hibernate.cfg.Settings - JDBC batch size: 15
+18:15:50.453 [] [qtp1204296383-22] DEBUG org.hibernate.cfg.Settings - JDBC batch updates for versioned data: enabled
+18:15:50.453 [] [qtp1204296383-22] DEBUG org.hibernate.cfg.Settings - Scrollable result sets: enabled
+18:15:50.453 [] [qtp1204296383-22] DEBUG org.hibernate.cfg.Settings - Wrap result sets: disabled
+18:15:50.453 [] [qtp1204296383-22] DEBUG org.hibernate.cfg.Settings - JDBC3 getGeneratedKeys(): enabled
+18:15:50.453 [] [qtp1204296383-22] DEBUG org.hibernate.cfg.Settings - JDBC result set fetch size: null
+18:15:50.453 [] [qtp1204296383-22] DEBUG org.hibernate.cfg.Settings - Connection release mode: AFTER_TRANSACTION
+18:15:50.453 [] [qtp1204296383-22] DEBUG org.hibernate.cfg.Settings - Generate SQL with comments: disabled
+18:15:50.453 [] [qtp1204296383-22] DEBUG org.hibernate.cfg.Settings - JPA compliance - query : disabled
+18:15:50.453 [] [qtp1204296383-22] DEBUG org.hibernate.cfg.Settings - JPA compliance - closed-handling : disabled
+18:15:50.453 [] [qtp1204296383-22] DEBUG org.hibernate.cfg.Settings - JPA compliance - lists : disabled
+18:15:50.453 [] [qtp1204296383-22] DEBUG org.hibernate.cfg.Settings - JPA compliance - transactions : disabled
+18:15:50.522 [] [qtp1204296383-22] DEBUG o.h.s.i.SessionFactoryServiceRegistryImpl - EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+18:15:50.522 [] [qtp1204296383-22] DEBUG o.h.s.i.SessionFactoryServiceRegistryImpl - EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+18:15:50.535 [] [qtp1204296383-22] DEBUG o.h.internal.SessionFactoryImpl - Session factory constructed with filter configurations : {}
+18:15:50.536 [] [qtp1204296383-22] DEBUG o.h.internal.SessionFactoryImpl - Instantiating session factory with properties: {hibernate.format_sql=true, java.specification.version=15, sun.cpu.isalist=amd64, sun.jnu.encoding=Cp1252, hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect, java.class.path=C:\Users\Sam\Desktop\Project1V2\project1-SamZirbel\target\classes;C:\Users\Sam\.m2\repository\ch\qos\logback\logback-classic\1.2.6\logback-classic-1.2.6.jar;C:\Users\Sam\.m2\repository\ch\qos\logback\logback-core\1.2.6\logback-core-1.2.6.jar;C:\Users\Sam\.m2\repository\org\slf4j\slf4j-api\1.7.32\slf4j-api-1.7.32.jar;C:\Users\Sam\.m2\repository\org\postgresql\postgresql\42.2.24\postgresql-42.2.24.jar;C:\Users\Sam\.m2\repository\org\checkerframework\checker-qual\3.5.0\checker-qual-3.5.0.jar;C:\Users\Sam\.m2\repository\io\javalin\javalin\3.13.12\javalin-3.13.12.jar;C:\Users\Sam\.m2\repository\org\eclipse\jetty\jetty-server\9.4.43.v20210629\jetty-server-9.4.43.v20210629.jar;C:\Users\Sam\.m2\repository\javax\servlet\javax.servlet-api\3.1.0\javax.servlet-api-3.1.0.jar;C:\Users\Sam\.m2\repository\org\eclipse\jetty\jetty-http\9.4.43.v20210629\jetty-http-9.4.43.v20210629.jar;C:\Users\Sam\.m2\repository\org\eclipse\jetty\jetty-util\9.4.43.v20210629\jetty-util-9.4.43.v20210629.jar;C:\Users\Sam\.m2\repository\org\eclipse\jetty\jetty-io\9.4.43.v20210629\jetty-io-9.4.43.v20210629.jar;C:\Users\Sam\.m2\repository\org\eclipse\jetty\jetty-webapp\9.4.43.v20210629\jetty-webapp-9.4.43.v20210629.jar;C:\Users\Sam\.m2\repository\org\eclipse\jetty\jetty-xml\9.4.43.v20210629\jetty-xml-9.4.43.v20210629.jar;C:\Users\Sam\.m2\repository\org\eclipse\jetty\jetty-servlet\9.4.43.v20210629\jetty-servlet-9.4.43.v20210629.jar;C:\Users\Sam\.m2\repository\org\eclipse\jetty\jetty-security\9.4.43.v20210629\jetty-security-9.4.43.v20210629.jar;C:\Users\Sam\.m2\repository\org\eclipse\jetty\jetty-util-ajax\9.4.43.v20210629\jetty-util-ajax-9.4.43.v20210629.jar;C:\Users\Sam\.m2\repository\org\eclipse\jetty\websocket\websocket-server\9.4.43.v20210629\websocket-server-9.4.43.v20210629.jar;C:\Users\Sam\.m2\repository\org\eclipse\jetty\websocket\websocket-common\9.4.43.v20210629\websocket-common-9.4.43.v20210629.jar;C:\Users\Sam\.m2\repository\org\eclipse\jetty\websocket\websocket-api\9.4.43.v20210629\websocket-api-9.4.43.v20210629.jar;C:\Users\Sam\.m2\repository\org\eclipse\jetty\websocket\websocket-client\9.4.43.v20210629\websocket-client-9.4.43.v20210629.jar;C:\Users\Sam\.m2\repository\org\eclipse\jetty\jetty-client\9.4.43.v20210629\jetty-client-9.4.43.v20210629.jar;C:\Users\Sam\.m2\repository\org\eclipse\jetty\websocket\websocket-servlet\9.4.43.v20210629\websocket-servlet-9.4.43.v20210629.jar;C:\Users\Sam\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-jdk8\1.3.71\kotlin-stdlib-jdk8-1.3.71.jar;C:\Users\Sam\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\1.3.71\kotlin-stdlib-1.3.71.jar;C:\Users\Sam\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-common\1.3.71\kotlin-stdlib-common-1.3.71.jar;C:\Users\Sam\.m2\repository\org\jetbrains\annotations\13.0\annotations-13.0.jar;C:\Users\Sam\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-jdk7\1.3.71\kotlin-stdlib-jdk7-1.3.71.jar;C:\Users\Sam\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.0\jackson-databind-2.13.0.jar;C:\Users\Sam\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.0\jackson-annotations-2.13.0.jar;C:\Users\Sam\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.0\jackson-core-2.13.0.jar;C:\Users\Sam\.m2\repository\org\hibernate\hibernate-core\5.6.0.Final\hibernate-core-5.6.0.Final.jar;C:\Users\Sam\.m2\repository\org\jboss\logging\jboss-logging\3.4.2.Final\jboss-logging-3.4.2.Final.jar;C:\Users\Sam\.m2\repository\javax\persistence\javax.persistence-api\2.2\javax.persistence-api-2.2.jar;C:\Users\Sam\.m2\repository\net\bytebuddy\byte-buddy\1.11.20\byte-buddy-1.11.20.jar;C:\Users\Sam\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\Sam\.m2\repository\org\jboss\spec\javax\transaction\jboss-transaction-api_1.2_spec\1.1.1.Final\jboss-transaction-api_1.2_spec-1.1.1.Final.jar;C:\Users\Sam\.m2\repository\org\jboss\jandex\2.2.3.Final\jandex-2.2.3.Final.jar;C:\Users\Sam\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\Sam\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\Sam\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.1.2.Final\hibernate-commons-annotations-5.1.2.Final.jar;C:\Users\Sam\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\Sam\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-runtime-2.3.1.jar;C:\Users\Sam\.m2\repository\org\glassfish\jaxb\txw2\2.3.1\txw2-2.3.1.jar;C:\Users\Sam\.m2\repository\com\sun\istack\istack-commons-runtime\3.0.7\istack-commons-runtime-3.0.7.jar;C:\Users\Sam\.m2\repository\org\jvnet\staxex\stax-ex\1.8\stax-ex-1.8.jar;C:\Users\Sam\.m2\repository\com\sun\xml\fastinfoset\FastInfoset\1.2.15\FastInfoset-1.2.15.jar, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, user.variant=, java.vendor.url=https://java.oracle.com/, user.timezone=America/Los_Angeles, java.vm.specification.version=15, os.name=Windows 10, sun.java.launcher=SUN_STANDARD, user.country=US, sun.boot.library.path=C:\Users\Sam\Downloads\sts-4.8.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.0.v20201014-1246\jre\bin, sun.java.command=com.revature.App, jdk.debug=release, sun.cpu.endian=little, user.home=C:\Users\Sam, user.language=en, java.specification.vendor=Oracle Corporation, java.version.date=2020-09-15, java.home=C:\Users\Sam\Downloads\sts-4.8.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.0.v20201014-1246\jre, file.separator=\, java.vm.compressedOopsMode=Zero based, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, hibernate.hbm2ddl.auto=create, user.script=, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=15+36-1562, user.name=Sam, path.separator=;, hibernate.connection.username=****, os.version=10.0, java.runtime.name=OpenJDK Runtime Environment, hibernate.connection.url=jdbc:postgresql://javafs-210927-sz.ctjhaliedh90.us-east-2.rds.amazonaws.com:5432/ers_project1, file.encoding=Cp1252, java.vm.name=OpenJDK 64-Bit Server VM, hibernate.show_sql=true, hibernate.connection.driver_class=org.postgresql.Driver, java.vendor.url.bug=https://bugreport.java.com/bugreport/, jetty.git.hash=526006ecfa3af7f1a27ef3a288e2bef7ea9dd7e8, java.io.tmpdir=C:\Users\Sam\AppData\Local\Temp\, java.version=15, user.dir=C:\Users\Sam\Desktop\Project1V2\project1-SamZirbel, os.arch=amd64, java.vm.specification.name=Java Virtual Machine Specification, hibernate.connection.password=****, sun.os.patch.level=, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@3a44308d, java.library.path=C:\Users\Sam\Downloads\sts-4.8.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.0.v20201014-1246\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\Sam\Downloads\sts-4.8.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.0.v20201014-1246\jre\bin;C:/Users/Sam/Downloads/sts-4.8.1.RELEASE//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.0.v20201014-1246/jre/bin/server;C:/Users/Sam/Downloads/sts-4.8.1.RELEASE//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.0.v20201014-1246/jre/bin;C:\Python310\Scripts\;C:\Python310\;C:\Program Files\Java\jdk1.8.0_301\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Maven\apache-maven-3.8.2\bin;;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Users\Sam\AppData\Local\Microsoft\WindowsApps;;C:\Users\Sam\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Sam\AppData\Roaming\npm;C:\Users\Sam\Downloads\sts-4.8.1.RELEASE;;., java.vendor=Oracle Corporation, java.vm.info=mixed mode, java.vm.version=15+36-1562, hibernate.bytecode.use_reflection_optimizer=false, sun.io.unicode.encoding=UnicodeLittle, java.class.version=59.0}
+18:15:50.553 [] [qtp1204296383-22] DEBUG o.h.secure.spi.JaccIntegrator - Skipping JACC integration as it was not enabled
+18:15:50.555 [] [qtp1204296383-22] DEBUG o.h.internal.SessionFactoryImpl - Instantiated session factory
+18:15:50.555 [] [qtp1204296383-22] DEBUG o.h.type.spi.TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@5e9f5cf1] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@45eab1a3]
+18:15:50.621 [] [qtp1204296383-22] DEBUG o.h.b.internal.ClassLoaderAccessImpl - Not known whether passed class name [com.revature.models.Request] is safe
+18:15:50.621 [] [qtp1204296383-22] DEBUG o.h.b.internal.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.revature.models.Request
+18:15:50.824 [] [qtp1204296383-22] DEBUG o.h.b.internal.ClassLoaderAccessImpl - Not known whether passed class name [com.revature.models.Account] is safe
+18:15:50.824 [] [qtp1204296383-22] DEBUG o.h.b.internal.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.revature.models.Account
+18:15:50.857 [] [qtp1204296383-22] DEBUG o.h.p.c.AbstractCollectionPersister - Static SQL for collection: com.revature.models.Account.requests
+18:15:50.858 [] [qtp1204296383-22] DEBUG o.h.p.c.AbstractCollectionPersister -  Row insert: update Request set requestId=? where requestId=?
+18:15:50.858 [] [qtp1204296383-22] DEBUG o.h.p.c.AbstractCollectionPersister -  Row update: update Request set  where requestId=?
+18:15:50.858 [] [qtp1204296383-22] DEBUG o.h.p.c.AbstractCollectionPersister -  Row delete: update Request set requestId=null where requestId=?
+18:15:50.858 [] [qtp1204296383-22] DEBUG o.h.p.c.AbstractCollectionPersister -  One-shot delete: update Request set requestId=null where requestId=?
+18:15:50.863 [] [qtp1204296383-22] DEBUG o.h.p.entity.AbstractEntityPersister - Static SQL for entity: com.revature.models.Request
+18:15:50.863 [] [qtp1204296383-22] DEBUG o.h.p.entity.AbstractEntityPersister -  Version select: select requestId from Request where requestId =?
+18:15:50.863 [] [qtp1204296383-22] DEBUG o.h.p.entity.AbstractEntityPersister -  Snapshot select: select request_.requestId, request_.amount as amount2_1_, request_.answered as answered3_1_, request_.description as descript4_1_, request_.status as status5_1_, request_.submitted as submitte6_1_, request_.type as type7_1_ from Request request_ where request_.requestId=?
+18:15:50.863 [] [qtp1204296383-22] DEBUG o.h.p.entity.AbstractEntityPersister -  Insert 0: insert into Request (amount, answered, description, status, submitted, type, requestId) values (?, ?, ?, ?, ?, ?, ?)
+18:15:50.863 [] [qtp1204296383-22] DEBUG o.h.p.entity.AbstractEntityPersister -  Update 0: update Request set amount=?, answered=?, description=?, status=?, submitted=?, type=? where requestId=?
+18:15:50.863 [] [qtp1204296383-22] DEBUG o.h.p.entity.AbstractEntityPersister -  Delete 0: delete from Request where requestId=?
+18:15:50.863 [] [qtp1204296383-22] DEBUG o.h.p.entity.AbstractEntityPersister -  Identity insert: insert into Request (amount, answered, description, status, submitted, type) values (?, ?, ?, ?, ?, ?)
+18:15:50.894 [hibernateLoadPlanWalkPath=] [qtp1204296383-22] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@a85d2f6]
+18:15:50.895 [hibernateLoadPlanWalkPath=com.revature.models.Request] [qtp1204296383-22] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : amount
+18:15:50.895 [hibernateLoadPlanWalkPath=com.revature.models.Request] [qtp1204296383-22] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : answered
+18:15:50.895 [hibernateLoadPlanWalkPath=com.revature.models.Request] [qtp1204296383-22] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : description
+18:15:50.895 [hibernateLoadPlanWalkPath=com.revature.models.Request] [qtp1204296383-22] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : status
+18:15:50.895 [hibernateLoadPlanWalkPath=com.revature.models.Request] [qtp1204296383-22] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : submitted
+18:15:50.895 [hibernateLoadPlanWalkPath=com.revature.models.Request] [qtp1204296383-22] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : type
+18:15:50.895 [] [qtp1204296383-22] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+18:15:50.906 [] [qtp1204296383-22] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+18:15:50.911 [] [qtp1204296383-22] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.revature.models.Request)
+    - Returns
+       - EntityReturnImpl(entity=com.revature.models.Request, querySpaceUid=<gen:0>, path=com.revature.models.Request)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.revature.models.Request)
+          - SQL table alias mapping - request0_
+          - alias suffix - 0_
+          - suffixed key columns - {requesti1_1_0_}
+
+18:15:50.914 [] [qtp1204296383-22] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.revature.models.Request [NONE]: select request0_.requestId as requesti1_1_0_, request0_.amount as amount2_1_0_, request0_.answered as answered3_1_0_, request0_.description as descript4_1_0_, request0_.status as status5_1_0_, request0_.submitted as submitte6_1_0_, request0_.type as type7_1_0_ from Request request0_ where request0_.requestId=?
+18:15:50.915 [] [qtp1204296383-22] DEBUG o.h.p.entity.AbstractEntityPersister - Static SQL for entity: com.revature.models.Account
+18:15:50.915 [] [qtp1204296383-22] DEBUG o.h.p.entity.AbstractEntityPersister -  Version select: select accountId from Account where accountId =?
+18:15:50.915 [] [qtp1204296383-22] DEBUG o.h.p.entity.AbstractEntityPersister -  Snapshot select: select account_.accountId, account_.accountType as accountt2_0_, account_.firstName as firstnam3_0_, account_.lastName as lastname4_0_ from Account account_ where account_.accountId=?
+18:15:50.915 [] [qtp1204296383-22] DEBUG o.h.p.entity.AbstractEntityPersister -  Insert 0: insert into Account (accountType, firstName, lastName, accountId) values (?, ?, ?, ?)
+18:15:50.916 [] [qtp1204296383-22] DEBUG o.h.p.entity.AbstractEntityPersister -  Update 0: update Account set accountType=?, firstName=?, lastName=? where accountId=?
+18:15:50.916 [] [qtp1204296383-22] DEBUG o.h.p.entity.AbstractEntityPersister -  Delete 0: delete from Account where accountId=?
+18:15:50.916 [] [qtp1204296383-22] DEBUG o.h.p.entity.AbstractEntityPersister -  Identity insert: insert into Account (accountType, firstName, lastName) values (?, ?, ?)
+18:15:50.916 [hibernateLoadPlanWalkPath=] [qtp1204296383-22] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@43858c85]
+18:15:50.916 [hibernateLoadPlanWalkPath=com.revature.models.Account] [qtp1204296383-22] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : accountType
+18:15:50.916 [hibernateLoadPlanWalkPath=com.revature.models.Account] [qtp1204296383-22] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : firstName
+18:15:50.916 [hibernateLoadPlanWalkPath=com.revature.models.Account] [qtp1204296383-22] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : lastName
+18:15:50.916 [hibernateLoadPlanWalkPath=com.revature.models.Account] [qtp1204296383-22] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : requests
+18:15:50.922 [hibernateLoadPlanWalkPath=com.revature.models.Account] [qtp1204296383-22] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@8275bd7]
+18:15:50.924 [hibernateLoadPlanWalkPath=com.revature.models.Account] [qtp1204296383-22] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@76f9d1d9]
+18:15:50.926 [hibernateLoadPlanWalkPath=com.revature.models.Account.requests.<elements>] [qtp1204296383-22] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : requests.amount
+18:15:50.926 [hibernateLoadPlanWalkPath=com.revature.models.Account.requests.<elements>] [qtp1204296383-22] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : requests.answered
+18:15:50.926 [hibernateLoadPlanWalkPath=com.revature.models.Account.requests.<elements>] [qtp1204296383-22] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : requests.description
+18:15:50.926 [hibernateLoadPlanWalkPath=com.revature.models.Account.requests.<elements>] [qtp1204296383-22] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : requests.status
+18:15:50.926 [hibernateLoadPlanWalkPath=com.revature.models.Account.requests.<elements>] [qtp1204296383-22] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : requests.submitted
+18:15:50.926 [hibernateLoadPlanWalkPath=com.revature.models.Account.requests.<elements>] [qtp1204296383-22] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : requests.type
+18:15:50.926 [] [qtp1204296383-22] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+18:15:50.926 [] [qtp1204296383-22] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+18:15:50.930 [] [qtp1204296383-22] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.revature.models.Account)
+    - Returns
+       - EntityReturnImpl(entity=com.revature.models.Account, querySpaceUid=<gen:0>, path=com.revature.models.Account)
+          - CollectionAttributeFetchImpl(collection=com.revature.models.Account.requests, querySpaceUid=<gen:1>, path=com.revature.models.Account.requests)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=com.revature.models.Request, querySpaceUid=<gen:2>, path=com.revature.models.Account.requests.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.revature.models.Account)
+          - SQL table alias mapping - account0_
+          - alias suffix - 0_
+          - suffixed key columns - {accounti1_0_0_}
+          - JOIN (JoinDefinedByMetadata(requests)) : <gen:0> -> <gen:1>
+             - CollectionQuerySpaceImpl(uid=<gen:1>, collection=com.revature.models.Account.requests)
+                - SQL table alias mapping - requests1_
+                - alias suffix - 1_
+                - suffixed key columns - {requesti1_1_1_}
+                - entity-element alias suffix - 2_
+                - 2_entity-element suffixed key columns - requesti1_1_2_
+                - JOIN (JoinDefinedByMetadata(elements)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=com.revature.models.Request)
+                      - SQL table alias mapping - requests1_
+                      - alias suffix - 2_
+                      - suffixed key columns - {requesti1_1_2_}
+
+18:15:50.930 [] [qtp1204296383-22] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.revature.models.Account [NONE]: select account0_.accountId as accounti1_0_0_, account0_.accountType as accountt2_0_0_, account0_.firstName as firstnam3_0_0_, account0_.lastName as lastname4_0_0_, requests1_.requestId as requesti1_1_1_, requests1_.requestId as requesti1_1_2_, requests1_.amount as amount2_1_2_, requests1_.answered as answered3_1_2_, requests1_.description as descript4_1_2_, requests1_.status as status5_1_2_, requests1_.submitted as submitte6_1_2_, requests1_.type as type7_1_2_ from Account account0_ left outer join Request requests1_ on account0_.accountId=requests1_.requestId where account0_.accountId=?
+18:15:50.936 [hibernateLoadPlanWalkPath=] [qtp1204296383-22] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@61f9023]
+18:15:50.936 [hibernateLoadPlanWalkPath=] [qtp1204296383-22] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@58aa86dd]
+18:15:50.936 [hibernateLoadPlanWalkPath=[com.revature.models.Account.requests].<elements>] [qtp1204296383-22] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : amount
+18:15:50.936 [hibernateLoadPlanWalkPath=[com.revature.models.Account.requests].<elements>] [qtp1204296383-22] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : answered
+18:15:50.936 [hibernateLoadPlanWalkPath=[com.revature.models.Account.requests].<elements>] [qtp1204296383-22] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : description
+18:15:50.936 [hibernateLoadPlanWalkPath=[com.revature.models.Account.requests].<elements>] [qtp1204296383-22] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : status
+18:15:50.936 [hibernateLoadPlanWalkPath=[com.revature.models.Account.requests].<elements>] [qtp1204296383-22] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : submitted
+18:15:50.936 [hibernateLoadPlanWalkPath=[com.revature.models.Account.requests].<elements>] [qtp1204296383-22] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : type
+18:15:50.936 [] [qtp1204296383-22] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+18:15:50.938 [] [qtp1204296383-22] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+18:15:50.940 [] [qtp1204296383-22] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(collection=com.revature.models.Account.requests)
+    - Returns
+       - CollectionReturnImpl(collection=com.revature.models.Account.requests, querySpaceUid=<gen:0>, path=[com.revature.models.Account.requests])
+          - (collection element) CollectionFetchableElementEntityGraph(entity=com.revature.models.Request, querySpaceUid=<gen:1>, path=[com.revature.models.Account.requests].<elements>)
+    - QuerySpaces
+       - CollectionQuerySpaceImpl(uid=<gen:0>, collection=com.revature.models.Account.requests)
+          - SQL table alias mapping - requests0_
+          - alias suffix - 0_
+          - suffixed key columns - {requesti1_1_0_}
+          - entity-element alias suffix - 1_
+          - 1_entity-element suffixed key columns - requesti1_1_1_
+          - JOIN (JoinDefinedByMetadata(elements)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=com.revature.models.Request)
+                - SQL table alias mapping - requests0_
+                - alias suffix - 1_
+                - suffixed key columns - {requesti1_1_1_}
+
+18:15:50.940 [] [qtp1204296383-22] DEBUG o.h.l.c.plan.CollectionLoader - Static select for collection com.revature.models.Account.requests: select requests0_.requestId as requesti1_1_0_, requests0_.requestId as requesti1_1_1_, requests0_.amount as amount2_1_1_, requests0_.answered as answered3_1_1_, requests0_.description as descript4_1_1_, requests0_.status as status5_1_1_, requests0_.submitted as submitte6_1_1_, requests0_.type as type7_1_1_ from Request requests0_ where requests0_.requestId=?
+18:15:50.989 [] [qtp1204296383-22] DEBUG org.hibernate.SQL - 
+    
+    alter table Request 
+       drop constraint FK9m4w56hvfj465y38718kkm9nb
+18:15:50.991 [] [qtp1204296383-22] INFO  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@61f43c92] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+18:15:51.075 [] [qtp1204296383-22] DEBUG org.hibernate.SQL - 
+    
+    drop table if exists Account cascade
+18:15:51.163 [] [qtp1204296383-22] DEBUG org.hibernate.SQL - 
+    
+    drop table if exists Request cascade
+18:15:51.250 [] [qtp1204296383-22] DEBUG org.hibernate.SQL - 
+    
+    create table Account (
+       accountId  serial not null,
+        accountType varchar(255),
+        firstName varchar(255),
+        lastName varchar(255),
+        primary key (accountId)
+    )
+18:15:51.250 [] [qtp1204296383-22] INFO  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@6858e64b] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+18:15:51.343 [] [qtp1204296383-22] DEBUG org.hibernate.SQL - 
+    
+    create table Request (
+       requestId  serial not null,
+        amount int4 not null,
+        answered varchar(255),
+        description varchar(255),
+        status varchar(255),
+        submitted varchar(255),
+        type varchar(255),
+        primary key (requestId)
+    )
+18:15:51.436 [] [qtp1204296383-22] DEBUG org.hibernate.SQL - 
+    
+    alter table Request 
+       add constraint FK9m4w56hvfj465y38718kkm9nb 
+       foreign key (requestId) 
+       references Account
+18:15:51.520 [] [qtp1204296383-22] DEBUG o.h.e.t.j.p.i.JtaPlatformInitiator - No JtaPlatform was specified, checking resolver
+18:15:51.520 [] [qtp1204296383-22] DEBUG o.h.e.t.j.p.i.JtaPlatformResolverInitiator - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+18:15:51.532 [] [qtp1204296383-22] DEBUG o.h.e.t.j.p.i.StandardJtaPlatformResolver - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+18:15:51.532 [] [qtp1204296383-22] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+18:15:51.534 [] [qtp1204296383-22] DEBUG o.h.query.spi.NamedQueryRepository - Checking 0 named HQL queries
+18:15:51.535 [] [qtp1204296383-22] DEBUG o.h.query.spi.NamedQueryRepository - Checking 0 named SQL queries
+18:15:51.545 [] [qtp1204296383-22] DEBUG o.h.s.i.SessionFactoryServiceRegistryImpl - EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+18:15:51.557 [] [qtp1204296383-22] DEBUG o.h.internal.SessionFactoryRegistry - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@17d44049
+18:15:51.561 [] [qtp1204296383-22] DEBUG o.h.internal.SessionFactoryRegistry - Registering SessionFactory: 41677e6d-cb2c-4a41-ba09-57c8ee885fc9 (<unnamed>)
+18:15:51.561 [] [qtp1204296383-22] DEBUG o.h.internal.SessionFactoryRegistry - Not binding SessionFactory to JNDI, no JNDI name configured
+18:15:51.689 [] [qtp1204296383-22] DEBUG o.h.s.internal.StatisticsInitiator - Statistics initialized [enabled=false]
+18:15:51.723 [] [qtp1204296383-22] DEBUG o.h.h.i.QueryTranslatorFactoryInitiator - QueryTranslatorFactory: org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@7a32ddf4
+18:15:51.803 [] [qtp1204296383-22] DEBUG o.h.h.i.ast.QueryTranslatorImpl - parse() - HQL: FROM com.revature.models.Account
+18:15:51.809 [] [qtp1204296383-22] DEBUG o.h.hql.internal.ast.ErrorTracker - throwQueryException() : no errors
+18:15:51.822 [] [qtp1204296383-22] DEBUG o.h.h.i.ast.QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    \-[SELECT_FROM] Node: 'SELECT_FROM'
+       \-[FROM] Node: 'FROM'
+          \-[RANGE] Node: 'RANGE'
+             \-[DOT] Node: '.'
+                +-[DOT] Node: '.'
+                |  +-[DOT] Node: '.'
+                |  |  +-[IDENT] Node: 'com'
+                |  |  \-[IDENT] Node: 'revature'
+                |  \-[IDENT] Node: 'models'
+                \-[IDENT] Node: 'Account'
+
+18:15:51.892 [] [qtp1204296383-22] DEBUG o.h.h.i.antlr.HqlSqlBaseWalker - select << begin [level=1, statement=select]
+18:15:51.920 [] [qtp1204296383-22] DEBUG o.h.h.internal.ast.tree.FromElement - FromClause{level=1} : com.revature.models.Account (<no alias>) -> account0_
+18:15:51.921 [] [qtp1204296383-22] DEBUG o.h.h.i.antlr.HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+18:15:51.922 [] [qtp1204296383-22] DEBUG o.h.hql.internal.ast.HqlSqlWalker - processQuery() :  ( SELECT ( FromClause{level=1} Account account0_ ) )
+18:15:51.932 [] [qtp1204296383-22] DEBUG o.h.hql.internal.ast.HqlSqlWalker - Derived SELECT clause created.
+18:15:51.938 [] [qtp1204296383-22] DEBUG o.h.h.i.ast.util.JoinProcessor - Tables referenced from query nodes:
+ \-QueryNode
+    +-SelectClause
+    | referencedTables(entity Account): [Account]
+    |  +-SelectExpressionImpl
+    |  | persister: SingleTableEntityPersister(com.revature.models.Account)
+    |  \-SqlFragment
+    \-FromClause
+       \-FromElement
+
+18:15:51.944 [] [qtp1204296383-22] DEBUG o.h.h.i.ast.util.JoinProcessor - Using FROM fragment [Account account0_]
+18:15:51.944 [] [qtp1204296383-22] DEBUG o.h.h.i.antlr.HqlSqlBaseWalker - select >> end [level=1, statement=select]
+18:15:51.945 [] [qtp1204296383-22] DEBUG o.h.h.i.ast.QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (Account)
+    +-[SELECT_CLAUSE] SelectClause: '{derived select clause}'
+    |  +-[SELECT_EXPR] SelectExpressionImpl: 'account0_.accountId as accounti1_0_' {FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=Account,tableAlias=account0_,origin=null,columns={,className=com.revature.models.Account}}}
+    |  \-[SQL_TOKEN] SqlFragment: 'account0_.accountType as accountt2_0_, account0_.firstName as firstnam3_0_, account0_.lastName as lastname4_0_'
+    \-[FROM] FromClause: 'FROM' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[], fromElementByTableAlias=[account0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+       \-[FROM_FRAGMENT] FromElement: 'Account account0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=Account,tableAlias=account0_,origin=null,columns={,className=com.revature.models.Account}}
+
+18:15:51.946 [] [qtp1204296383-22] DEBUG o.h.hql.internal.ast.ErrorTracker - throwQueryException() : no errors
+18:15:51.967 [] [qtp1204296383-22] DEBUG o.h.h.i.ast.QueryTranslatorImpl - HQL: FROM com.revature.models.Account
+18:15:51.967 [] [qtp1204296383-22] DEBUG o.h.h.i.ast.QueryTranslatorImpl - SQL: select account0_.accountId as accounti1_0_, account0_.accountType as accountt2_0_, account0_.firstName as firstnam3_0_, account0_.lastName as lastname4_0_ from Account account0_
+18:15:51.967 [] [qtp1204296383-22] DEBUG o.h.hql.internal.ast.ErrorTracker - throwQueryException() : no errors
+18:15:52.002 [] [qtp1204296383-22] DEBUG org.hibernate.SQL - 
+    select
+        account0_.accountId as accounti1_0_,
+        account0_.accountType as accountt2_0_,
+        account0_.firstName as firstnam3_0_,
+        account0_.lastName as lastname4_0_ 
+    from
+        Account account0_
+18:15:52.105 [] [qtp1204296383-22] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+18:15:52.666 [] [qtp1204296383-22] DEBUG o.e.jetty.server.HttpChannelState - unhandle HttpChannelState@7323d797{s=HANDLING rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0}
+18:15:52.677 [] [qtp1204296383-22] DEBUG o.e.jetty.server.HttpChannelState - nextAction(false) COMPLETE HttpChannelState@7323d797{s=HANDLING rs=COMPLETING os=OPEN is=IDLE awp=false se=false i=false al=0}
+18:15:52.681 [] [qtp1204296383-22] DEBUG o.e.jetty.server.HttpConnection - HttpConnection@60960685::SocketChannelEndPoint@65f62619{l=/[0:0:0:0:0:0:0:1]:8081,r=/[0:0:0:0:0:0:0:1]:49897,OPEN,fill=-,flush=-,to=4646/30000}{io=0/0,kio=0,kro=1}->HttpConnection@60960685[p=HttpParser{s=CONTENT,0 of 368},g=HttpGenerator@62ffff9e{s=START}]=>HttpChannelOverHttp@328d6f6a{s=HttpChannelState@7323d797{s=HANDLING rs=COMPLETING os=OPEN is=IDLE awp=false se=false i=false al=0},r=1,c=false/false,a=HANDLING,uri=//localhost:8081/account,age=4627} parse HeapByteBuffer@6a295bff[p=261,l=629,c=8192,r=368]={GET /acco...368\r\n\r\n<<< {\r\n         "accountId":...        }\r\n    ]\r\n    }>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00} {}
+18:15:52.681 [] [qtp1204296383-22] DEBUG org.eclipse.jetty.http.HttpParser - parseNext s=CONTENT HeapByteBuffer@6a295bff[p=261,l=629,c=8192,r=368]={GET /acco...368\r\n\r\n<<< {\r\n         "accountId":...        }\r\n    ]\r\n    }>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00}
+18:15:52.682 [] [qtp1204296383-22] DEBUG org.eclipse.jetty.server.HttpInput - HttpInputOverHTTP@223ef7e7[c=0,q=0,[0]=null,s=STREAM] addContent Content@9d8a82f{HeapByteBufferR@69964d04[p=261,l=629,c=8192,r=368]={GET /acco...368\r\n\r\n<<< {\r\n         "accountId":...        }\r\n    ]\r\n    }>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00}}
+18:15:52.682 [] [qtp1204296383-22] DEBUG org.eclipse.jetty.http.HttpParser - CONTENT --> CONTENT_END
+18:15:52.682 [] [qtp1204296383-22] DEBUG org.eclipse.jetty.http.HttpParser - CONTENT_END --> END
+18:15:52.683 [] [qtp1204296383-22] DEBUG org.eclipse.jetty.server.HttpInput - HttpInputOverHTTP@223ef7e7[c=0,q=1,[0]=EOF,s=STREAM] addContent EOF
+18:15:52.685 [] [qtp1204296383-22] DEBUG o.e.jetty.server.HttpConnection - HttpConnection@60960685::SocketChannelEndPoint@65f62619{l=/[0:0:0:0:0:0:0:1]:8081,r=/[0:0:0:0:0:0:0:1]:49897,OPEN,fill=-,flush=-,to=4651/30000}{io=0/0,kio=0,kro=1}->HttpConnection@60960685[p=HttpParser{s=END,368 of 368},g=HttpGenerator@62ffff9e{s=START}]=>HttpChannelOverHttp@328d6f6a{s=HttpChannelState@7323d797{s=HANDLING rs=COMPLETING os=OPEN is=IDLE awp=false se=false i=false al=0},r=1,c=false/false,a=HANDLING,uri=//localhost:8081/account,age=4630} parsed false HttpParser{s=END,368 of 368}
+18:15:52.687 [] [qtp1204296383-22] DEBUG o.e.jetty.server.HttpConnection - releaseRequestBuffer HttpConnection@60960685::SocketChannelEndPoint@65f62619{l=/[0:0:0:0:0:0:0:1]:8081,r=/[0:0:0:0:0:0:0:1]:49897,OPEN,fill=-,flush=-,to=4654/30000}{io=0/0,kio=0,kro=1}->HttpConnection@60960685[p=HttpParser{s=END,368 of 368},g=HttpGenerator@62ffff9e{s=START}]=>HttpChannelOverHttp@328d6f6a{s=HttpChannelState@7323d797{s=HANDLING rs=COMPLETING os=OPEN is=IDLE awp=false se=false i=false al=0},r=1,c=false/false,a=HANDLING,uri=//localhost:8081/account,age=4633}
+18:15:52.691 [] [qtp1204296383-22] DEBUG org.eclipse.jetty.server.HttpOutput - complete(org.eclipse.jetty.util.Callback$3@364ad42c) s=CLOSING,api=BLOCKED,sc=false,e=null s=false e=null, c=DirectByteBuffer@23d2ca0b[p=0,l=2,c=32768,r=2]={<<<[]>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00}
+18:15:52.699 [] [qtp1204296383-22] DEBUG o.e.jetty.server.HttpConnection - generate: NEED_HEADER for SendCallback@24516715[PROCESSING][i=HTTP/1.1{s=200,h=3,cl=-1},cb=org.eclipse.jetty.server.HttpChannel$SendCallback@74eee7e0] (null,[p=0,l=2,c=32768,r=2],true)@START
+18:15:52.701 [] [qtp1204296383-22] DEBUG o.e.jetty.server.HttpConnection - generate: FLUSH for SendCallback@24516715[PROCESSING][i=HTTP/1.1{s=200,h=3,cl=-1},cb=org.eclipse.jetty.server.HttpChannel$SendCallback@74eee7e0] ([p=0,l=124,c=8192,r=124],[p=0,l=2,c=32768,r=2],true)@COMPLETING
+18:15:52.702 [] [qtp1204296383-22] DEBUG org.eclipse.jetty.io.WriteFlusher - write: WriteFlusher@26fd379e{IDLE}->null [HeapByteBuffer@57467b64[p=0,l=124,c=8192,r=124]={<<<HTTP/1.1 200 OK\r\nDate: Su...\r\nContent-Length: 2\r\n\r\n>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00},DirectByteBuffer@23d2ca0b[p=0,l=2,c=32768,r=2]={<<<[]>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00}]
+18:15:52.702 [] [qtp1204296383-22] DEBUG org.eclipse.jetty.io.WriteFlusher - update WriteFlusher@26fd379e{WRITING}->null:IDLE-->WRITING
+18:15:52.706 [] [qtp1204296383-22] DEBUG org.eclipse.jetty.io.ChannelEndPoint - flushed 126 SocketChannelEndPoint@65f62619{l=/[0:0:0:0:0:0:0:1]:8081,r=/[0:0:0:0:0:0:0:1]:49897,OPEN,fill=-,flush=W,to=4672/30000}{io=0/0,kio=0,kro=1}->HttpConnection@60960685[p=HttpParser{s=END,368 of 368},g=HttpGenerator@62ffff9e{s=COMPLETING}]=>HttpChannelOverHttp@328d6f6a{s=HttpChannelState@7323d797{s=HANDLING rs=COMPLETING os=COMMITTED is=IDLE awp=false se=false i=false al=0},r=1,c=false/false,a=HANDLING,uri=//localhost:8081/account,age=4652}
+18:15:52.706 [] [qtp1204296383-22] DEBUG org.eclipse.jetty.io.WriteFlusher - Flushed=true written=126 remaining=0 WriteFlusher@26fd379e{WRITING}->null
+18:15:52.706 [] [qtp1204296383-22] DEBUG org.eclipse.jetty.io.WriteFlusher - update WriteFlusher@26fd379e{IDLE}->null:WRITING-->IDLE
+18:15:52.707 [] [qtp1204296383-22] DEBUG o.e.jetty.server.HttpConnection - generate: DONE for SendCallback@24516715[PROCESSING][i=HTTP/1.1{s=200,h=3,cl=-1},cb=org.eclipse.jetty.server.HttpChannel$SendCallback@74eee7e0] ([p=124,l=124,c=8192,r=0],[p=2,l=2,c=32768,r=0],true)@END
+18:15:52.708 [] [qtp1204296383-22] DEBUG org.eclipse.jetty.server.HttpOutput - onWriteComplete(true,null) s=CLOSING,api=BLOCKED,sc=false,e=null->s=CLOSED,api=BLOCKING,sc=false,e=null c=null cb=org.eclipse.jetty.util.Callback$3@364ad42c w=false
+18:15:52.708 [] [qtp1204296383-22] DEBUG o.e.jetty.server.HttpChannelState - completed HttpChannelState@7323d797{s=HANDLING rs=COMPLETING os=COMPLETED is=IDLE awp=false se=false i=false al=0}
+18:15:52.709 [] [qtp1204296383-22] DEBUG o.e.jetty.server.HttpChannelState - unhandle HttpChannelState@7323d797{s=HANDLING rs=COMPLETED os=COMPLETED is=IDLE awp=false se=false i=false al=0}
+18:15:52.709 [] [qtp1204296383-22] DEBUG o.e.jetty.server.HttpChannelState - nextAction(false) TERMINATED HttpChannelState@7323d797{s=IDLE rs=COMPLETED os=COMPLETED is=IDLE awp=false se=false i=false al=0}
+18:15:52.710 [] [qtp1204296383-22] DEBUG o.e.jetty.server.HttpChannelState - recycle HttpChannelState@7323d797{s=IDLE rs=COMPLETED os=COMPLETED is=IDLE awp=false se=false i=false al=0}
+18:15:52.715 [] [qtp1204296383-22] DEBUG org.eclipse.jetty.http.HttpParser - reset HttpParser{s=END,368 of 368}
+18:15:52.715 [] [qtp1204296383-22] DEBUG org.eclipse.jetty.http.HttpParser - END --> START
+18:15:52.716 [] [qtp1204296383-22] DEBUG org.eclipse.jetty.io.ChannelEndPoint - filled 0 HeapByteBuffer@6a295bff[p=0,l=0,c=8192,r=0]={<<<>>>GET /acco...\x00\x00\x00\x00\x00\x00\x00}
+18:15:52.716 [] [qtp1204296383-22] DEBUG org.eclipse.jetty.io.ChannelEndPoint - filled 0 HeapByteBuffer@6a295bff[p=0,l=0,c=8192,r=0]={<<<>>>GET /acco...\x00\x00\x00\x00\x00\x00\x00}
+18:15:52.718 [] [qtp1204296383-22] DEBUG o.e.jetty.server.HttpConnection - HttpConnection@60960685::SocketChannelEndPoint@65f62619{l=/[0:0:0:0:0:0:0:1]:8081,r=/[0:0:0:0:0:0:0:1]:49897,OPEN,fill=-,flush=-,to=10/30000}{io=0/0,kio=0,kro=1}->HttpConnection@60960685[p=HttpParser{s=START,0 of -1},g=HttpGenerator@62ffff9e{s=START}]=>HttpChannelOverHttp@328d6f6a{s=HttpChannelState@7323d797{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=1,c=false/false,a=IDLE,uri=null,age=0} filled 0 HeapByteBuffer@6a295bff[p=0,l=0,c=8192,r=0]={<<<>>>GET /acco...\x00\x00\x00\x00\x00\x00\x00}
+18:15:52.721 [] [qtp1204296383-22] DEBUG o.e.jetty.server.HttpConnection - HttpConnection@60960685::SocketChannelEndPoint@65f62619{l=/[0:0:0:0:0:0:0:1]:8081,r=/[0:0:0:0:0:0:0:1]:49897,OPEN,fill=-,flush=-,to=12/30000}{io=0/0,kio=0,kro=1}->HttpConnection@60960685[p=HttpParser{s=START,0 of -1},g=HttpGenerator@62ffff9e{s=START}]=>HttpChannelOverHttp@328d6f6a{s=HttpChannelState@7323d797{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=1,c=false/false,a=IDLE,uri=null,age=0} parse HeapByteBuffer@6a295bff[p=0,l=0,c=8192,r=0]={<<<>>>GET /acco...\x00\x00\x00\x00\x00\x00\x00} {}
+18:15:52.722 [] [qtp1204296383-22] DEBUG org.eclipse.jetty.http.HttpParser - parseNext s=START HeapByteBuffer@6a295bff[p=0,l=0,c=8192,r=0]={<<<>>>GET /acco...\x00\x00\x00\x00\x00\x00\x00}
+18:15:52.723 [] [qtp1204296383-22] DEBUG o.e.jetty.server.HttpConnection - HttpConnection@60960685::SocketChannelEndPoint@65f62619{l=/[0:0:0:0:0:0:0:1]:8081,r=/[0:0:0:0:0:0:0:1]:49897,OPEN,fill=-,flush=-,to=15/30000}{io=0/0,kio=0,kro=1}->HttpConnection@60960685[p=HttpParser{s=START,0 of -1},g=HttpGenerator@62ffff9e{s=START}]=>HttpChannelOverHttp@328d6f6a{s=HttpChannelState@7323d797{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=1,c=false/false,a=IDLE,uri=null,age=0} parsed false HttpParser{s=START,0 of -1}
+18:15:52.725 [] [qtp1204296383-22] DEBUG o.e.jetty.server.HttpConnection - releaseRequestBuffer HttpConnection@60960685::SocketChannelEndPoint@65f62619{l=/[0:0:0:0:0:0:0:1]:8081,r=/[0:0:0:0:0:0:0:1]:49897,OPEN,fill=-,flush=-,to=17/30000}{io=0/0,kio=0,kro=1}->HttpConnection@60960685[p=HttpParser{s=START,0 of -1},g=HttpGenerator@62ffff9e{s=START}]=>HttpChannelOverHttp@328d6f6a{s=HttpChannelState@7323d797{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=1,c=false/false,a=IDLE,uri=null,age=0}
+18:15:52.728 [] [qtp1204296383-22] DEBUG o.e.jetty.io.AbstractConnection - fillInterested HttpConnection@60960685::SocketChannelEndPoint@65f62619{l=/[0:0:0:0:0:0:0:1]:8081,r=/[0:0:0:0:0:0:0:1]:49897,OPEN,fill=-,flush=-,to=19/30000}{io=0/0,kio=0,kro=1}->HttpConnection@60960685[p=HttpParser{s=START,0 of -1},g=HttpGenerator@62ffff9e{s=START}]=>HttpChannelOverHttp@328d6f6a{s=HttpChannelState@7323d797{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=1,c=false/false,a=IDLE,uri=null,age=0}
+18:15:52.729 [] [qtp1204296383-22] DEBUG org.eclipse.jetty.io.FillInterest - interested FillInterest@79c0e40f{AC.ReadCB@60960685{HttpConnection@60960685::SocketChannelEndPoint@65f62619{l=/[0:0:0:0:0:0:0:1]:8081,r=/[0:0:0:0:0:0:0:1]:49897,OPEN,fill=FI,flush=-,to=0/30000}{io=0/0,kio=0,kro=1}->HttpConnection@60960685[p=HttpParser{s=START,0 of -1},g=HttpGenerator@62ffff9e{s=START}]=>HttpChannelOverHttp@328d6f6a{s=HttpChannelState@7323d797{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=1,c=false/false,a=IDLE,uri=null,age=0}}}
+18:15:52.732 [] [qtp1204296383-22] DEBUG org.eclipse.jetty.io.ChannelEndPoint - changeInterests p=false 0->1 for SocketChannelEndPoint@65f62619{l=/[0:0:0:0:0:0:0:1]:8081,r=/[0:0:0:0:0:0:0:1]:49897,OPEN,fill=FI,flush=-,to=1/30000}{io=0/1,kio=0,kro=1}->HttpConnection@60960685[p=HttpParser{s=START,0 of -1},g=HttpGenerator@62ffff9e{s=START}]=>HttpChannelOverHttp@328d6f6a{s=HttpChannelState@7323d797{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=1,c=false/false,a=IDLE,uri=null,age=0}
+18:15:52.734 [] [qtp1204296383-21] DEBUG org.eclipse.jetty.io.ChannelEndPoint - Key interests updated 0 -> 1 on SocketChannelEndPoint@65f62619{l=/[0:0:0:0:0:0:0:1]:8081,r=/[0:0:0:0:0:0:0:1]:49897,OPEN,fill=FI,flush=-,to=3/30000}{io=1/1,kio=1,kro=1}->HttpConnection@60960685[p=HttpParser{s=START,0 of -1},g=HttpGenerator@62ffff9e{s=START}]=>HttpChannelOverHttp@328d6f6a{s=HttpChannelState@7323d797{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=1,c=false/false,a=IDLE,uri=null,age=0}
+18:15:52.735 [] [qtp1204296383-22] DEBUG o.e.jetty.server.HttpConnection - HttpConnection@60960685::SocketChannelEndPoint@65f62619{l=/[0:0:0:0:0:0:0:1]:8081,r=/[0:0:0:0:0:0:0:1]:49897,OPEN,fill=FI,flush=-,to=3/30000}{io=1/1,kio=1,kro=1}->HttpConnection@60960685[p=HttpParser{s=START,0 of -1},g=HttpGenerator@62ffff9e{s=START}]=>HttpChannelOverHttp@328d6f6a{s=HttpChannelState@7323d797{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=1,c=false/false,a=IDLE,uri=null,age=0} onFillable exit HttpChannelState@7323d797{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0} null

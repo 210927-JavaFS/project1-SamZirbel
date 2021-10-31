@@ -12,13 +12,15 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 @Entity
 public class Account {
 	
 	@Id
 	@Column(unique = true)
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int accountID;
+	private int accountId;
 	
 	private String firstName;
 	
@@ -26,16 +28,21 @@ public class Account {
 	
 	private String accountType;
 	
-	@OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+	// ADDed Mapped By - orphan removal
+	@OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)//, orphanRemoval = true)
 	@JoinColumn(name = "requestId")
+	// VV Trying
+	//@OneToMany(targetEntity=Request.class, cascade = CascadeType.ALL, fetch = FetchType.LAZY, orphanRemoval = true)
+	
+	//@JsonIgnore
 	private List<Request> requests;
 
 	
 	
 	
-	public Account(int accountID, String firstName, String lastName, String accountType, List<Request> requests) {
+	public Account(int accountId, String firstName, String lastName, String accountType, List<Request> requests) {
 		super();
-		this.accountID = accountID;
+		this.accountId = accountId;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.accountType = accountType;
@@ -54,12 +61,12 @@ public class Account {
 		super();
 	}
 
-	public int getAccountID() {
-		return accountID;
+	public int getaccountId() {
+		return accountId;
 	}
 
-	public void setAccountID(int accountID) {
-		this.accountID = accountID;
+	public void setaccountId(int accountId) {
+		this.accountId = accountId;
 	}
 
 	public String getFirstName() {
@@ -98,7 +105,7 @@ public class Account {
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + accountID;
+		result = prime * result + accountId;
 		result = prime * result + ((accountType == null) ? 0 : accountType.hashCode());
 		result = prime * result + ((firstName == null) ? 0 : firstName.hashCode());
 		result = prime * result + ((lastName == null) ? 0 : lastName.hashCode());
@@ -115,7 +122,7 @@ public class Account {
 		if (getClass() != obj.getClass())
 			return false;
 		Account other = (Account) obj;
-		if (accountID != other.accountID)
+		if (accountId != other.accountId)
 			return false;
 		if (accountType == null) {
 			if (other.accountType != null)
@@ -142,7 +149,7 @@ public class Account {
 
 	@Override
 	public String toString() {
-		return "Account [accountID=" + accountID + ", firstName=" + firstName + ", lastName=" + lastName
+		return "Account [accountId=" + accountId + ", firstName=" + firstName + ", lastName=" + lastName
 				+ ", accountType=" + accountType + ", requests=" + requests + "]";
 	}
 
