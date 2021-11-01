@@ -40,6 +40,36 @@ public class RequestDAOImpl implements RequestDAO{
 		
 	}
 
+	@Override
+	public Request getRequestByID(int ID) {
+		
+		Session session = HibernateUtil.getSession();
+		
+		Request request = session.get(Request.class, ID);
+		
+		HibernateUtil.closeSession();
+		
+		return request;
+		
+	}
+
+	@Override
+	public boolean updateRequest(Request request) {
+		
+		Session session = HibernateUtil.getSession();
+		
+		Transaction transaction = session.beginTransaction();
+		
+		session.merge(request);
+		
+		transaction.commit();
+		
+		HibernateUtil.closeSession();
+		
+		return true;
+		
+	}
+
 	
 	
 }

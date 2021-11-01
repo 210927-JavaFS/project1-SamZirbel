@@ -20,12 +20,27 @@ let viewMyRequestsButton = document.createElement("button");
 viewMyRequestsButton.setAttribute('id', "viewMyRequestsButton");
 viewMyRequestsButton.innerText = "View All My Requests";
 
+let viewAllRequestsButton = document.createElement("button");
+viewAllRequestsButton.setAttribute('id', 'viewAllRequestsButton');
+viewAllRequestsButton.innerText = "View All Account Requests";
+
+let enterRequestUpdateButton = document.createElement("button");
+enterRequestUpdateButton.setAttribute('id', 'enterRequestUpdateButton');
+enterRequestUpdateButton.innerText = "Update A Request";
+
+let submitUpdateButton = document.createElement("button");
+submitUpdateButton.setAttribute('id', 'submitUpdateButton');
+submitUpdateButton.innerText = "Submit Request Update";
+
 loginButton.onclick = loginFunction;
 addUserButton.onclick = addUserFunction;
 updateAccountButton.onclick = updateAccountFunction;
 enterRequestButton.onclick = newReimbursementFunction;
 submitRequestButton.onclick = submitNewReimbursement;
 viewMyRequestsButton.onclick = displayMyRequests;
+viewAllRequestsButton.onclick = displayAllRequests;
+enterRequestUpdateButton.onclick = updateRequest;
+submitUpdateButton.onclick = submitRequestUpdate;
 
 
 
@@ -103,8 +118,6 @@ async function loginFunction () {
 
     getEmployeeAccount();
 
-    displayAccountOptions();
-
 
   }
 
@@ -143,6 +156,9 @@ async function getEmployeeAccount() {
   console.log("Account Type : " + loggedInAccountType);
   console.log("\n");
 
+  
+  displayAccountOptions();
+
 
 }
 
@@ -152,11 +168,244 @@ function displayAccountOptions() {
 
   let optionsDiv = document.getElementById('accountOptionsDiv');
 
+  //let myReqs = document.getElementById('myRequestDiv');
+
+  //clearChildTags(myReqs);
+
   clearChildTags(optionsDiv);
 
   optionsDiv.appendChild(enterRequestButton);
 
   optionsDiv.appendChild(viewMyRequestsButton);
+
+  console.log(loggedInAccountType);
+
+  if (loggedInAccountType === "Manager") {
+
+    console.log("Special Manager Options Go Here");
+
+      optionsDiv.appendChild(viewAllRequestsButton);
+
+      optionsDiv.appendChild(enterRequestUpdateButton);
+
+  }
+
+
+}
+
+
+function updateRequest() {
+
+  console.log("Updating Reuqest");
+
+
+  let optionsDiv = document.getElementById('accountOptionsDiv');
+
+  clearChildTags(optionsDiv);
+
+  
+  let formvar = document.createElement("form");
+
+  let label1 = document.createElement("label");
+  label1.setAttribute('for', 'requestIdEntry');
+  label1.innerText = "Request ID";
+  formvar.appendChild(label1);
+
+  let input1 = document.createElement("input");
+  input1.setAttribute('type', "text");
+  input1.setAttribute('id', 'requestIdEntry');
+  input1.setAttribute('name', 'requestIdEntry');
+  formvar.appendChild(input1);
+
+  let breaker01 = document.createElement("br");
+  formvar.appendChild(breaker01);
+
+    
+  let label2 = document.createElement("label");
+  label2.setAttribute('for', 'statusEntry');
+  label2.innerText = "Status : Approved / Denied";
+  formvar.appendChild(label2);
+
+  let input2 = document.createElement("input");
+  input2.setAttribute('type', "text");
+  input2.setAttribute('id', 'statusEntry');
+  input2.setAttribute('name', 'statusEntry');
+  formvar.appendChild(input2);
+
+
+  optionsDiv.appendChild(formvar);
+
+  optionsDiv.appendChild(submitUpdateButton);
+
+}
+
+async function submitRequestUpdate () {
+
+  
+  let updateId = document.getElementById('requestIdEntry').value;
+  let updateStatus = document.getElementById('statusEntry').value;
+
+  let sender = {
+
+    "requestID" : updateId,
+    "accountNumber" : "",
+    "status" : updateStatus,
+    "amount" : 0,
+    "type" : "",
+    "submittedDate" : "",
+    "answeredDate" : String(new Date()),
+    "description" : ""
+
+  }
+
+  console.log(sender);
+
+  let response = await fetch(URL + "reimb/1", {
+
+    method : 'POST',
+    body : JSON.stringify(sender)
+
+  });
+
+  let data = await response.json();
+
+  console.log("!!!!!!!!!!!!");
+  console.log("Reimbursement Posted : " + data);
+  console.log("\n");
+
+  clearChildTags('myRequestDiv');
+
+  displayAccountOptions();
+
+
+}
+
+
+async function displayAllRequests() {
+
+  console.log("Displaying All Requests");
+
+  let response = await fetch(URL + "reimb", { } );
+
+  let data = await response.json();
+
+  
+
+  let tableDiv = document.getElementById('myRequestsDiv');
+
+  let rtable = document.createElement("table");
+
+  let rthead = document.createElement("thead");
+
+  let trhead = document.createElement("tr");
+
+  let thaccountNumber = document.createElement("th");
+  thaccountNumber.innerText = "Account Number";
+  trhead.appendChild(thaccountNumber);
+
+  let thamount = document.createElement("th");
+  thamount.innerText = "Amount";
+  trhead.appendChild(thamount);
+
+  let thansweredDate = document.createElement("th");
+  thansweredDate.innerText = "Answered Date";
+  trhead.appendChild(thansweredDate);
+
+  let thdescription = document.createElement("th");
+  thdescription.innerText = "description";
+  trhead.appendChild(thdescription);
+
+  let threquestID = document.createElement("th");
+  threquestID.innerText = "Request Identification";
+  trhead.appendChild(threquestID);
+
+  let thstatus = document.createElement("th");
+  thstatus.innerText = "Status";
+  trhead.appendChild(thstatus);
+
+  let thsubmittedDate = document.createElement("th");
+  thsubmittedDate.innerText = "submittedDate";
+  trhead.appendChild(thsubmittedDate);
+
+  let thtype = document.createElement("th");
+  thtype.innerText = "type";
+  trhead.appendChild(thtype);
+
+  rthead.appendChild(trhead);
+
+  let rtbody = document.createElement("tbody");
+
+  for (let obj of data) {
+
+    let row = document.createElement("tr");
+
+    console.log(Object(obj).type);
+
+    let td1 = document.createElement("td");
+    td1.innerText = Object(obj).accountNumber;
+    row.appendChild(td1);
+
+    let td2 = document.createElement("td");
+    td2.innerText = Object(obj).amount;
+    row.appendChild(td2);
+
+    let td3 = document.createElement("td");
+    td3.innerText = Object(obj).answeredDate;
+    row.appendChild(td3);
+
+    let td4 = document.createElement("td");
+    td4.innerText = Object(obj).description;
+    row.appendChild(td4);
+
+
+    let td5 = document.createElement("td");
+    td5.innerText = Object(obj).requestID;
+    row.appendChild(td5);
+
+    let td6 = document.createElement("td");
+    td6.innerText = Object(obj).status;
+    row.appendChild(td6);
+
+    let td7 = document.createElement("td");
+    td7.innerText = Object(obj).submittedDate;
+    row.appendChild(td7);
+
+    let td8 = document.createElement("td");
+    td8.innerText = Object(obj).type;
+    row.appendChild(td8);
+  
+
+    rtbody.appendChild(row);
+
+  }
+
+  rtable.appendChild(rthead);
+  rtable.appendChild(rtbody);
+
+  tableDiv.appendChild(rtable);
+
+  
+
+  viewMyRequestsButton.innerText = "Close Requests";
+  viewMyRequestsButton.onclick = closeMyRequests;
+
+
+
+  //viewAllRequestsButton.innerText = "Back To All Account Operations";
+  //viewAllRequestsButton.onclick = resetManagerButtons();
+
+  
+  console.log(data);
+  console.log("\n");
+
+}
+
+function resetManagerButtons () {
+
+  clearChildTags(myRequestsDiv);
+
+  viewAllRequestsButton.innerText = "View All Account Requests";
+  viewAllRequestsButton.onclick = displayAllRequests();
 
 
 }

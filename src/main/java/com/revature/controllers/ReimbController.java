@@ -43,13 +43,37 @@ public class ReimbController implements Controller {
 		
 	};
 	
+	public Handler getAllRequests = (ctx) -> {
+		
+		List<Request> requests = requestservice.getAllRequests();
+		
+		ctx.json(requests);
+		ctx.status(200);
+		
+	};
+	
+	public Handler updateRequest = (ctx) -> {
+		
+		Request request = ctx.bodyAsClass(Request.class);
+		
+		boolean updated = requestservice.updateRequest(request);
+		
+		ctx.json(updated);
+		ctx.status(200);
+		
+	};
+	
 	
 	@Override
 	public void addRoutes(Javalin app) {
 		
 		app.get("/reimb/:who", this.getAllMyRequests);
 		
+		app.get("/reimb", this.getAllRequests);
+		
 		app.post("/reimb", this.postReimbursement);
+		
+		app.post("/reimb/:flag", this.updateRequest);
 		
 	}
 	

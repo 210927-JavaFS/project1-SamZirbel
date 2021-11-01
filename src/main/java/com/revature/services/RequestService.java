@@ -50,5 +50,34 @@ public class RequestService {
 		return goodRequests;
 		
 	}
+	
+	public Request getRequestByID(int ID) {
+		
+		Request request = requestdao.getRequestByID(ID);
+		
+		return request;
+		
+	}
+	
+	public boolean updateRequest(Request request) {
+		
+		int id = request.getRequestID();
+		
+		Request updating = getRequestByID(id);
+		
+		String updatingStatus = request.getStatus();
+		
+		String updatingAnswer = request.getAnsweredDate();
+		
+		updating.setStatus(updatingStatus);
+		
+		updating.setAnsweredDate(updatingAnswer);
+		
+		boolean updated = requestdao.updateRequest(updating);
+		
+		return updated;
+		
+		
+	}
 
 }
