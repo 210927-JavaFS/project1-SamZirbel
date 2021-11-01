@@ -7,6 +7,8 @@ import com.revature.models.Request;
 import com.revature.repos.RequestDAO;
 import com.revature.repos.RequestDAOImpl;
 
+import jdk.internal.org.jline.utils.Log;
+
 public class RequestService {
 	
 	private RequestDAO requestdao = new RequestDAOImpl();
@@ -14,6 +16,8 @@ public class RequestService {
 	public boolean postRequest(Request request) {
 		
 		boolean posted = requestdao.postRequest(request);
+		
+		//Log.info("New Request Posted " + request);
 		
 		return posted;
 		
@@ -74,6 +78,9 @@ public class RequestService {
 		updating.setAnsweredDate(updatingAnswer);
 		
 		boolean updated = requestdao.updateRequest(updating);
+		
+		
+		//Log.info("Request " + request + " Updated");
 		
 		return updated;
 		

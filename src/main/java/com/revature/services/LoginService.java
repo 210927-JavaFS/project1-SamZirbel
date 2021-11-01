@@ -4,6 +4,8 @@ import java.util.List;
 
 import com.revature.utils.encryptDecryptUtil;
 
+import jdk.internal.org.jline.utils.Log;
+
 import com.revature.models.Account;
 import com.revature.models.Login;
 import com.revature.repos.AccountDAO;
@@ -35,6 +37,8 @@ public class LoginService {
 			activeUsername = logins.get(i).getUsername();
 			
 			if (username.equals(activeUsername)) {
+				
+				//Log.info("Login Unsuccessful : Password Match");
 				
 				result = false;
 				i = logincount;
@@ -77,6 +81,10 @@ public class LoginService {
 		}
 		else {
 			
+			//Log.debug("Account Addition Status : " + accountAdded);
+			//Log.debug("Accout Update Status : " + accountUpdated);
+			//Log.debug("Login Addition Status : " + loginAdded);
+			
 			returning = false;
 			
 		}
@@ -117,6 +125,8 @@ public class LoginService {
 		boolean aok = false;
 		
 		if (check != null && inputPassword.equals(check.getPassword())) {
+			
+			//Log.info("Password Matching Successful");
 			
 			aok = true;
 			

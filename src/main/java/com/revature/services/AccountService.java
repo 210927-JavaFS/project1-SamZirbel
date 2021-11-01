@@ -4,6 +4,8 @@ import com.revature.models.Account;
 import com.revature.repos.AccountDAO;
 import com.revature.repos.AccountDAOImpl;
 
+import jdk.internal.org.jline.utils.Log;
+
 public class AccountService {
 	
 	private AccountDAO accountdao = new AccountDAOImpl();
@@ -25,6 +27,8 @@ public class AccountService {
 		boolean complete = false;
 		
 		complete = accountdao.updateAccount(oldAccount);
+		
+		//Log.info("Account Associated With " + username + " Updated");
 		
 		return complete;
 		
