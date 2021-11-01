@@ -1,5 +1,7 @@
 package com.revature.repos;
 
+import java.util.List;
+
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
@@ -22,6 +24,19 @@ public class RequestDAOImpl implements RequestDAO{
 		HibernateUtil.closeSession();
 		
 		return true;
+		
+	}
+
+	@Override
+	public List<Request> getAllRequests() {
+		
+		Session session = HibernateUtil.getSession();
+		
+		List<Request> requests = session.createQuery("FROM Request").list();
+		
+		HibernateUtil.closeSession();
+		
+		return requests;
 		
 	}
 

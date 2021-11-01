@@ -16,11 +16,16 @@ let submitRequestButton = document.createElement("button");
 submitRequestButton.setAttribute('id', "submitRequestButton");
 submitRequestButton.innerText = "Submit Request!!";
 
+let viewMyRequestsButton = document.createElement("button");
+viewMyRequestsButton.setAttribute('id', "viewMyRequestsButton");
+viewMyRequestsButton.innerText = "View All My Requests";
+
 loginButton.onclick = loginFunction;
 addUserButton.onclick = addUserFunction;
 updateAccountButton.onclick = updateAccountFunction;
 enterRequestButton.onclick = newReimbursementFunction;
 submitRequestButton.onclick = submitNewReimbursement;
+viewMyRequestsButton.onclick = displayMyRequests;
 
 
 
@@ -151,6 +156,133 @@ function displayAccountOptions() {
 
   optionsDiv.appendChild(enterRequestButton);
 
+  optionsDiv.appendChild(viewMyRequestsButton);
+
+
+}
+
+async function displayMyRequests () {
+
+  console.log("Displaying User Requests");
+
+  let accountNumb = Object(loggedInAccount).accountID;
+
+  let response = await fetch(URL + "reimb/" + accountNumb, { } );
+
+  let data = await response.json();
+
+
+
+  let tableDiv = document.getElementById('myRequestsDiv');
+
+  let rtable = document.createElement("table");
+
+  let rthead = document.createElement("thead");
+
+  let trhead = document.createElement("tr");
+
+  let thaccountNumber = document.createElement("th");
+  thaccountNumber.innerText = "Account Number";
+  trhead.appendChild(thaccountNumber);
+
+  let thamount = document.createElement("th");
+  thamount.innerText = "Amount";
+  trhead.appendChild(thamount);
+
+  let thansweredDate = document.createElement("th");
+  thansweredDate.innerText = "Answered Date";
+  trhead.appendChild(thansweredDate);
+
+  let thdescription = document.createElement("th");
+  thdescription.innerText = "description";
+  trhead.appendChild(thdescription);
+
+  let threquestID = document.createElement("th");
+  threquestID.innerText = "Request Identification";
+  trhead.appendChild(threquestID);
+
+  let thstatus = document.createElement("th");
+  thstatus.innerText = "Status";
+  trhead.appendChild(thstatus);
+
+  let thsubmittedDate = document.createElement("th");
+  thsubmittedDate.innerText = "submittedDate";
+  trhead.appendChild(thsubmittedDate);
+
+  let thtype = document.createElement("th");
+  thtype.innerText = "type";
+  trhead.appendChild(thtype);
+
+  rthead.appendChild(trhead);
+
+  let rtbody = document.createElement("tbody");
+
+  for (let obj of data) {
+
+    let row = document.createElement("tr");
+
+    console.log(Object(obj).type);
+
+    let td1 = document.createElement("td");
+    td1.innerText = Object(obj).accountNumber;
+    row.appendChild(td1);
+
+    let td2 = document.createElement("td");
+    td2.innerText = Object(obj).amount;
+    row.appendChild(td2);
+
+    let td3 = document.createElement("td");
+    td3.innerText = Object(obj).answeredDate;
+    row.appendChild(td3);
+
+    let td4 = document.createElement("td");
+    td4.innerText = Object(obj).description;
+    row.appendChild(td4);
+
+
+    let td5 = document.createElement("td");
+    td5.innerText = Object(obj).requestID;
+    row.appendChild(td5);
+
+    let td6 = document.createElement("td");
+    td6.innerText = Object(obj).status;
+    row.appendChild(td6);
+
+    let td7 = document.createElement("td");
+    td7.innerText = Object(obj).submittedDate;
+    row.appendChild(td7);
+
+    let td8 = document.createElement("td");
+    td8.innerText = Object(obj).type;
+    row.appendChild(td8);
+  
+
+    rtbody.appendChild(row);
+
+  }
+
+  rtable.appendChild(rthead);
+  rtable.appendChild(rtbody);
+
+  tableDiv.appendChild(rtable);
+
+  
+
+  viewMyRequestsButton.innerText = "Close My Requests";
+  viewMyRequestsButton.onclick = closeMyRequests;
+
+
+  console.log(data);
+  console.log("\n");
+
+}
+
+function closeMyRequests () {
+
+  clearChildTags(myRequestsDiv);
+
+  viewMyRequestsButton.innerText = "View All My Requests";
+  viewMyRequestsButton.onclick = displayMyRequests;
 
 }
 

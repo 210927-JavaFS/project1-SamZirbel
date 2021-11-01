@@ -26,7 +26,7 @@ jdbc:postgresql://javafs-210927-sz.ctjhaliedh90.us-east-2.rds.amazonaws.com:5432
 		<property name="hibernate.format_sql"> true </property>
 		<!-- DOL Permission Level -->
 		<!--  create Delet update Keep -->
-		<property name="hibernate.hbm2ddl.auto"> create </property>
+		<property name="hibernate.hbm2ddl.auto"> update </property>
 
 
 		<!-- Mapping Entity Classes (So The SF IS Aware Of Them) -->

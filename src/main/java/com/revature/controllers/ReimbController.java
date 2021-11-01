@@ -1,5 +1,7 @@
 package com.revature.controllers;
 
+import java.util.List;
+
 import com.revature.models.Request;
 import com.revature.services.RequestService;
 
@@ -23,9 +25,29 @@ public class ReimbController implements Controller {
 		
 	};
 	
+	public Handler getAllMyRequests = (ctx) -> {
+		
+		String paramString = ctx.pathParam("who");
+		
+		int param = Integer.parseInt(paramString);
+		
+		System.err.println("Account : " + param);
+		
+		List<Request> requests = requestservice.getAllRequestsforAccount(param);
+		
+		System.err.println(requests);
+		
+		ctx.json(requests);
+		ctx.status(200);
+
+		
+	};
+	
 	
 	@Override
 	public void addRoutes(Javalin app) {
+		
+		app.get("/reimb/:who", this.getAllMyRequests);
 		
 		app.post("/reimb", this.postReimbursement);
 		
