@@ -6692,3 +6692,7 @@ Caused by: org.postgresql.util.PSQLException: ERROR: column "accountnumber" of r
 04:18:20.398 [] [qtp1626343059-19] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
 04:56:30.104 [] [qtp1147805316-25] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
 04:59:51.111 [] [qtp2107577743-20] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+05:14:43.351 [] [qtp1626343059-20] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+05:16:08.616 [] [qtp2107577743-25] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+05:18:12.463 [] [qtp2107577743-24] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+05:26:34.531 [] [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)

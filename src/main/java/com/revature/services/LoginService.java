@@ -2,6 +2,8 @@ package com.revature.services;
 
 import java.util.List;
 
+import com.revature.utils.encryptDecryptUtil;
+
 import com.revature.models.Account;
 import com.revature.models.Login;
 import com.revature.repos.AccountDAO;
@@ -54,6 +56,12 @@ public class LoginService {
 		
 		login.setAccount(account);
 		
+		String password = login.getPassword();
+		
+		password = encryptDecryptUtil.encryptDecrypt(password);
+		
+		login.setPassword(password);
+		
 		boolean loginAdded = logindao.addUser(login);
 		
 		account.setLogin(login);
@@ -99,6 +107,8 @@ public class LoginService {
 	
 		String inputUsername = login.getUsername();
 		String inputPassword = login.getPassword();
+		
+		inputPassword = encryptDecryptUtil.encryptDecrypt(inputPassword);
 		
 		// VV Check Matches Username To Table
 		// VV It Checks For The Username By The Result
