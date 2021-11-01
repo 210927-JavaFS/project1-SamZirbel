@@ -33,6 +33,8 @@ jdbc:postgresql://javafs-210927-sz.ctjhaliedh90.us-east-2.rds.amazonaws.com:5432
 
 		<mapping class="com.revature.models.Login" />
 		<mapping class="com.revature.models.Account" />
+		<mapping class="com.revature.models.Request" />
+		
 
 
 	</session-factory>

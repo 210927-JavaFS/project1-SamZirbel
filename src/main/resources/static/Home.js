@@ -147,6 +147,8 @@ function displayAccountOptions() {
 
   let optionsDiv = document.getElementById('accountOptionsDiv');
 
+  clearChildTags(optionsDiv);
+
   optionsDiv.appendChild(enterRequestButton);
 
 
@@ -214,6 +216,42 @@ function newReimbursementFunction () {
 async function submitNewReimbursement () {
 
   console.log("Submitting New Reimbursement");
+
+  console.log(loggedInAccount);
+
+  let postAmount = parseInt(document.getElementById('reimbAmountEntry').value);
+  let accountNumb = Object(loggedInAccount).accountID;
+
+
+  let sender = {
+
+    //"requestID" : null,
+    "accountNumber" : accountNumb,
+    "status" : "Pending",
+    "amount" : postAmount,
+    "type" : document.getElementById('reimbTypeEntry').value,
+    "submittedDate" : String(new Date()),
+    "answeredDate" : "Pending",
+    "description" : document.getElementById('reimbDescriptionEntry').value
+
+  }
+
+  console.log(sender);
+
+  let response = await fetch(URL + "reimb", {
+
+    method : 'POST',
+    body : JSON.stringify(sender)
+
+  });
+
+  let data = await response.json();
+
+  console.log("!!!!!!!!!!!!");
+  console.log("Reimbursement Posted : " + data);
+  console.log("\n");
+
+  displayAccountOptions();
 
 }
 

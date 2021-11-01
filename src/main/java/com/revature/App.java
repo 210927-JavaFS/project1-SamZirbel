@@ -4,6 +4,7 @@ import com.revature.controllers.AdderController;
 import com.revature.controllers.CheckerController;
 import com.revature.controllers.Controller;
 import com.revature.controllers.GrabberController;
+import com.revature.controllers.ReimbController;
 import com.revature.controllers.UpdaterController;
 
 import io.javalin.Javalin;
@@ -23,7 +24,8 @@ public class App {
 		});
 		
 		configure(new CheckerController(), new AdderController(), 
-				new UpdaterController(), new GrabberController());
+				new UpdaterController(), new GrabberController(),
+				new ReimbController());
 		
 		
 		
