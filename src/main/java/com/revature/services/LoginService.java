@@ -1,0 +1,120 @@
+package com.revature.services;
+
+import java.util.List;
+
+import com.revature.models.Account;
+import com.revature.models.Login;
+import com.revature.repos.AccountDAO;
+import com.revature.repos.AccountDAOImpl;
+import com.revature.repos.LoginDAO;
+import com.revature.repos.LoginDAOImpl;
+
+public class LoginService {
+	
+	private LoginDAO logindao = new LoginDAOImpl();
+	private AccountDAO accountdao = new AccountDAOImpl();
+	
+	public boolean validateUniqueUsername(String username) {
+		
+		System.out.println("");
+		
+		List<Login> logins = logindao.getAllLogins();
+		
+		System.out.println(logins);
+		
+		int logincount = logins.size();
+		
+		boolean result = true;
+		
+		String activeUsername;
+		
+		for (int i = 0; i < logincount; ++ i) {
+			
+			activeUsername = logins.get(i).getUsername();
+			
+			if (username.equals(activeUsername)) {
+				
+				result = false;
+				i = logincount;
+				
+			}
+			
+			
+		}
+		
+		return result;
+		
+	}
+
+	public boolean addNewUser(Login login) {
+		
+		Account account = new Account();
+		
+		boolean accountAdded = accountdao.addAccount(account);
+		
+		login.setAccount(account);
+		
+		boolean loginAdded = logindao.addUser(login);
+		
+		account.setLogin(login);
+		
+		boolean accountUpdated = accountdao.updateAccount(account);
+		
+		boolean returning;
+		
+		if (accountAdded && accountUpdated && loginAdded) {
+			
+			returning = true;
+			
+		}
+		else {
+			
+			returning = false;
+			
+		}
+		
+		return returning;
+		
+	}
+
+	public Login getLoginByName(String username) {
+		
+		Login login = logindao.getLoginByName(username);
+		
+		return login;
+		
+	}
+	
+	public Account findAccountFromUser(String username) {
+		
+		Login login = getLoginByName(username);
+		
+		Account account = login.getAccount();
+		
+		return account;
+		
+	}
+
+	public boolean verifyUser(Login login) {
+	
+		String inputUsername = login.getUsername();
+		String inputPassword = login.getPassword();
+		
+		// VV Check Matches Username To Table
+		// VV It Checks For The Username By The Result
+		Login check = getLoginByName(inputUsername);
+		
+		boolean aok = false;
+		
+		if (check != null && inputPassword.equals(check.getPassword())) {
+			
+			aok = true;
+			
+		}
+		
+		return aok;
+		
+	}
+	
+	
+}
