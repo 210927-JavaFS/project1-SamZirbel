@@ -1,16 +1,20 @@
 package com.revature.services;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.revature.models.Account;
 import com.revature.repos.AccountDAO;
 import com.revature.repos.AccountDAOImpl;
-
-import jdk.internal.org.jline.utils.Log;
 
 public class AccountService {
 	
 	private AccountDAO accountdao = new AccountDAOImpl();
 	
 	private LoginService loginservice = new LoginService();
+	
+	private static Logger Log = LoggerFactory.getLogger(LoginService.class);
+	
 	
 	public boolean updateAccount(Account account, String username) {
 		
@@ -28,7 +32,7 @@ public class AccountService {
 		
 		complete = accountdao.updateAccount(oldAccount);
 		
-		//Log.info("Account Associated With " + username + " Updated");
+		Log.info("Account Associated With " + username + " Updated");
 		
 		return complete;
 		

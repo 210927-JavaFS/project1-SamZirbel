@@ -2,9 +2,8 @@ package com.revature.services;
 
 import java.util.List;
 
-import com.revature.utils.encryptDecryptUtil;
-
-import jdk.internal.org.jline.utils.Log;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import com.revature.models.Account;
 import com.revature.models.Login;
@@ -12,11 +11,15 @@ import com.revature.repos.AccountDAO;
 import com.revature.repos.AccountDAOImpl;
 import com.revature.repos.LoginDAO;
 import com.revature.repos.LoginDAOImpl;
+import com.revature.utils.encryptDecryptUtil;
 
 public class LoginService {
 	
 	private LoginDAO logindao = new LoginDAOImpl();
 	private AccountDAO accountdao = new AccountDAOImpl();
+	
+	private static Logger Log = LoggerFactory.getLogger(LoginService.class);
+
 	
 	public boolean validateUniqueUsername(String username) {
 		
@@ -38,7 +41,7 @@ public class LoginService {
 			
 			if (username.equals(activeUsername)) {
 				
-				//Log.info("Login Unsuccessful : Password Match");
+				Log.info("Login Unsuccessful : Password Match");
 				
 				result = false;
 				i = logincount;
@@ -81,9 +84,9 @@ public class LoginService {
 		}
 		else {
 			
-			//Log.debug("Account Addition Status : " + accountAdded);
-			//Log.debug("Accout Update Status : " + accountUpdated);
-			//Log.debug("Login Addition Status : " + loginAdded);
+			Log.debug("Account Addition Status : " + accountAdded);
+			Log.debug("Accout Update Status : " + accountUpdated);
+			Log.debug("Login Addition Status : " + loginAdded);
 			
 			returning = false;
 			
@@ -126,7 +129,7 @@ public class LoginService {
 		
 		if (check != null && inputPassword.equals(check.getPassword())) {
 			
-			//Log.info("Password Matching Successful");
+			Log.info("Password Matching Successful");
 			
 			aok = true;
 			
