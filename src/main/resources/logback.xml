@@ -16,7 +16,7 @@
         </encoder>
     </appender>
 
-  <root level="warn">
+  <root level="all">
     <appender-ref ref="STDOUT" />
     <appender-ref ref="FILE" />
   </root>
