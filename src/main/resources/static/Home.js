@@ -816,6 +816,16 @@ async function updateAccountFunction () {
   console.log("Account Updated : " + data);
   console.log("\n");
 
+  resetForNewAccount();
+
+}
+
+function resetForNewAccount() {
+
+  let newUserDivBody = document.getElementById('newUserDiv');
+
+  clearChildTags(newUserDivBody);
+
 }
 
 
