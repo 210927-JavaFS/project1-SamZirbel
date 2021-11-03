@@ -6848,3 +6848,5 @@ java.lang.IllegalAccessError: class com.revature.services.LoginService (in unnam
 	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034)
 	at java.base/java.lang.Thread.run(Thread.java:832)
 06:04:13.073 [] [qtp76659128-22] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+06:29:19.256 [] [qtp2107577743-25] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+06:46:44.420 [] [qtp2107577743-21] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
