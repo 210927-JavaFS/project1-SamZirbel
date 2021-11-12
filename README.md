@@ -39,7 +39,8 @@ Java, JUnit, Log4J, Javalin, HTML, CSS, JavaScript, Hibernate, AWS RDS, SQL
 > _Note : Regarding the connection url - if using a jdbc postgreSQL database you can use the format jdbc:postgresql://\<Host Database URL\>:\<Desired Port\>/\<Database Name\>_
 5. Save hibernate.cfg.xml changes
 6. Open an IDE such as Eclipse or Spring Tool Suite
-7. Run project as a Java Application
+7. Import the project from the chosen host directory which it was cloned into
+9. Run project as a Java Application
 
 ## Contributors
 
